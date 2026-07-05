@@ -1,6 +1,6 @@
 # python-ai-alibaba-agent-framework-demo
 
-Python counterpart of the Java `spring-ai-alibaba-agent-framework-demo` module.
+A Python teaching project for agent framework patterns: tools, memory, hooks, interceptors, human approval, and multi-agent flow.
 
 ## Run order for class
 
@@ -21,15 +21,6 @@ $env:PROVIDER="deepseek"
 $env:DEEPSEEK_API_KEY="your-key"
 $env:LLM_NAME="deepseek-chat"
 ```
-
-## Java to Python map
-
-- `AgentApplication.java` -> `agent_application.py`
-- `AgentController.java` -> `agent_controller.py`
-- `agent/ZhouyuAgent.java` -> `agent/zhouyu_agent.py`
-- `hooks/*.java` -> `hooks/*.py`
-- `interceptor/*.java` -> `interceptor/*.py`
-- `tools/*.java` -> `tools/*.py`
 
 ## Class storyline
 

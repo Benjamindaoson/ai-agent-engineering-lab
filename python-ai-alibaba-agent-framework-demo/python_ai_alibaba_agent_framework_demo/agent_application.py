@@ -74,9 +74,9 @@ def create_application() -> AgentApplication:
     execute_agent = ReactAgent("executeAgent", system_prompt="根据执行计划执行任务")
     sequential_agent = SequentialAgent("sequentialAgent", [plan_agent, execute_agent])
 
-    java_agent = ReactAgent("javaAgent", system_prompt="你是一个Java程序员", output_key="javaCode")
+    backend_agent = ReactAgent("backendAgent", system_prompt="你是一个Python后端程序员", output_key="backendCode")
     python_agent = ReactAgent("pythonAgent", system_prompt="你是一个Python程序员", output_key="pythonCode")
-    parallel_agent = ParallelAgent("parallelAgent", [java_agent, python_agent], merge_output_key="code")
+    parallel_agent = ParallelAgent("parallelAgent", [backend_agent, python_agent], merge_output_key="code")
 
     code_agent = ReactAgent("agent1", description="这是一个专门用来写Python代码的Agent", system_prompt="你是一个程序员，写python")
     poem_agent = ReactAgent("agent2", description="这是一个专门用来写五言绝句的Agent", system_prompt="你是一个诗人，写五言绝句")

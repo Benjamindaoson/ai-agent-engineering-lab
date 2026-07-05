@@ -14,7 +14,7 @@
 
 ## 先看哪些文件
 
-1. `python_claw/java_claw_application.py`：应用组装入口。
+1. 应用组装入口：负责把工作区、技能、记忆和消息入口串起来。
 2. `python_claw/claw_agent.py`：核心 Agent。
 3. `python_claw/memory/memory_service.py`：记忆系统。
 4. `python_claw/skill/skill_loader.py`：技能加载。

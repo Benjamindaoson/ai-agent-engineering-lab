@@ -30,7 +30,7 @@ LEVELS = [
     Level(6, "python-ai-weekly-report", "自动化关：周报生成", "python_ai_weekly_report"),
     Level(7, "python-ai-order", "业务关：订单 Agent", "python_ai_order"),
     Level(8, "python-ai-consultation", "垂直业务关：咨询 Agent", "python_ai_consultation"),
-    Level(9, "python-spring-ai-demo", "框架关：Spring AI 对照", "python_spring_ai_demo"),
+    Level(9, "python-spring-ai-demo", "框架关：AI 框架能力", "python_spring_ai_demo"),
     Level(10, "python-ai-mcp-server-demo", "协议关：MCP Server", "python_ai_mcp_server_demo"),
     Level(11, "python-a2a-demo", "协作关：A2A", "python_a2a_demo"),
     Level(12, "python-ai-alibaba-demo", "生态关：Alibaba", "python_ai_alibaba_demo"),

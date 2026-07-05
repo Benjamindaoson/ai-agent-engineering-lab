@@ -1,6 +1,6 @@
 # python-ai-deepresearch
 
-Python counterpart of the Java `ai-deepresearch` module.
+A Python teaching project for deep research agents: planning, searching, collecting evidence, and producing reports.
 
 ## Run order for class
 

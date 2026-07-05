@@ -1,6 +1,6 @@
 # python-ai-order
 
-Python counterpart of the Java `ai-order` module.
+A Python teaching project for business workflow agents: product search, ordering, payment confirmation, refunds, and customer support knowledge.
 
 ## Run order for class
 

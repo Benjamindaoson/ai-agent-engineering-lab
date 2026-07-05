@@ -1,1 +1,1 @@
-"""Python port of the Java ai-engineer module."""
+"""Python teaching module for AI engineering agents."""

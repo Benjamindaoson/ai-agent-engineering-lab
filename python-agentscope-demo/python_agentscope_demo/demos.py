@@ -42,7 +42,7 @@ def run_tool_demo() -> str:
 def run_tool_preset_demo() -> str:
     toolkit = Toolkit()
     toolkit.register_tool(EmailService(), preset_parameters={"send": {"apiKey": "123123"}})
-    return make_basic_agent(toolkit).call(Msg.text("发邮件给zhouyu,主题为Java")).text
+    return make_basic_agent(toolkit).call(Msg.text("发邮件给zhouyu,主题为Python")).text
 
 
 def run_tool_context_demo() -> str:
@@ -172,7 +172,7 @@ def run_vision_demo() -> str:
 
 
 def run_image_generate_demo() -> str:
-    return "图片生成离线演示：Java 原注释为暂时跑不通，Python 保留入口并说明需要图像模型。"
+    return "图片生成离线演示：当前保留入口并说明需要图像模型。"
 
 
 def run_studio_demo(inputs: list[str] | None = None) -> str:

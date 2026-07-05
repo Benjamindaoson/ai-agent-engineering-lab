@@ -59,7 +59,7 @@ def build_service(model=None, workspace: Path = WORKSPACE) -> PlannerAgentServic
 
 def main() -> None:
     service = build_service()
-    plan = service.plan("Build the simplest login feature using Java and Vue.js. Ignore security.")
+    plan = service.plan("Build the simplest login feature using Python and Vue.js. Ignore security.")
     print(plan.to_json())
     print(service.execute(plan))
 

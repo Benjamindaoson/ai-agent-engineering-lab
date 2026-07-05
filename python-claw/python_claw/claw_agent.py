@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from .feishu_tools import FeishuTools
-from .java_claw_properties import JavaClawProperties
+from .claw_properties import ClawProperties
 from .memory.memory_service import MemoryService
 from .memory.session_startup import SessionStartup
 from .skill.skill_loader import SkillLoader
@@ -38,7 +38,7 @@ class ClawAgent:
 
     def __init__(
         self,
-        properties: JavaClawProperties,
+        properties: ClawProperties,
         memory_service: MemoryService,
         session_startup: SessionStartup,
         skill_loader: SkillLoader,

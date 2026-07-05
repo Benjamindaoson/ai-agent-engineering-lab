@@ -12,8 +12,8 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from python_claw.claw_agent import ClawAgent
 from python_claw.feishu_message_receiver import FeishuMessageReceiver
 from python_claw.feishu_tools import FeishuTools
-from python_claw.java_claw_application import create_application
-from python_claw.java_claw_properties import JavaClawProperties
+from python_claw.claw_application import create_application
+from python_claw.claw_properties import ClawProperties
 from python_claw.memory.memory_service import MemoryService
 from python_claw.memory.session_startup import SessionStartup
 from python_claw.skill.skill_loader import SkillLoader
@@ -25,7 +25,7 @@ class PythonClawTests(unittest.TestCase):
     def test_workspace_templates_skills_and_prompt_are_initialized(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
-            props = JavaClawProperties(workspace_dir=root / "workspace")
+            props = ClawProperties(workspace_dir=root / "workspace")
             loader = SkillLoader()
             memory = MemoryService(props.workspace_dir, today=lambda: date(2026, 7, 4), now=lambda: datetime(2026, 7, 4, 9))
             startup = SessionStartup(props.workspace_dir)

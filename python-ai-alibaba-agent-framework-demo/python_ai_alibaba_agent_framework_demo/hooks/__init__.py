@@ -1,1 +1,1 @@
-"""Hook counterparts for the Java demo."""
+"""Hook components for the framework demo."""

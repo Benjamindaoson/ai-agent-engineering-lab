@@ -1,4 +1,4 @@
-from .java_claw_application import main
+from .claw_application import main
 
 
 if __name__ == "__main__":

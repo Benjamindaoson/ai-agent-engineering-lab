@@ -232,7 +232,7 @@ class ReActAgent:
             result = self.toolkit.query("select * from orders")
             return Msg(text=result or "没有可用工具：query", name=self.name, role="assistant")
         if "发邮件" in user_text:
-            sent = self.toolkit.send_email("zhouyu", "Java")
+            sent = self.toolkit.send_email("zhouyu", "Python")
             if sent:
                 result, visible_input = sent
                 return Msg(text=result, name=self.name, role="assistant", visible_tool_input=visible_input)

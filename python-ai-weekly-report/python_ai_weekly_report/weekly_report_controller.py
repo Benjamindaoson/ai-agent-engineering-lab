@@ -6,7 +6,7 @@ from .git_tool import GitTool
 
 SYSTEM_PROMPT = """
 ## 角色定义
-你是一名在软件开发公司工作的Java开发工程师。
+你是一名在软件开发公司工作的 Python 开发工程师。
 
 ## 任务
 根据项目 Git 提交历史记录生成简洁、清晰、结构化的工作周报，并在用户确认后发送邮件。

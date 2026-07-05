@@ -1,1 +1,1 @@
-"""Python port of the Java ai-manus module."""
+"""Python teaching module for Manus-style task execution."""

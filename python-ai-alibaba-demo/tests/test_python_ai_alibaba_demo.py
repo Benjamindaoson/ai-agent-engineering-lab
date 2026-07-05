@@ -46,7 +46,7 @@ class AlibabaDemoTests(unittest.TestCase):
 
         self.assertEqual(len(documents), 2)
         self.assertEqual(documents[0].metadata["title"], "zhouyu_title")
-        self.assertIn("public class Test", documents[0].content)
+        self.assertIn("class Test:", documents[0].content)
         self.assertIn("> 111", documents[0].content)
         self.assertIn("222", documents[1].content)
 
@@ -60,7 +60,7 @@ class AlibabaDemoTests(unittest.TestCase):
         self.assertEqual(documents[0].metadata["parser"], "stdlib-placeholder")
         self.assertIn("PDF binary", documents[0].content)
 
-    def test_chat_controller_exposes_java_endpoint_behaviors_offline(self):
+    def test_chat_controller_exposes_endpoint_behaviors_offline(self):
         vector_store = SimpleVectorStore()
         vector_store.add(
             [
@@ -83,7 +83,7 @@ class AlibabaDemoTests(unittest.TestCase):
         self.assertIn("history=", controller.rag_advisor2("class-1", "继续解释删除影响"))
         self.assertIn("DashScope", controller.file_chat("什么是API-KEY"))
 
-    def test_baidu_search_request_matches_java_tool_shape(self):
+    def test_baidu_search_request_matches_tool_shape(self):
         request = build_baidu_search_request("Spring AI Alibaba", top_k=10)
 
         self.assertEqual(request["query"], "Spring AI Alibaba")

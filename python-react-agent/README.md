@@ -1,6 +1,6 @@
 # Python ReAct Agent
 
-Python counterpart of `java-react-agent`. The Java module is unchanged.
+A Python teaching project for the smallest ReAct Agent loop: model calls, tool metadata, action parsing, and observation history.
 
 ## Setup
 

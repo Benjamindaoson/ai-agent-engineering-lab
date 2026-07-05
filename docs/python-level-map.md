@@ -51,7 +51,7 @@ python -m <package>.offline_demo
 | 06 | `python-ai-weekly-report` | 自动化关 | 周报素材收集、Git 信息读取、报告生成 | `python -m python_ai_weekly_report.offline_demo` |
 | 07 | `python-ai-order` | 业务关 | 订单状态流转、业务规则、客服 Agent | `python -m python_ai_order.offline_demo` |
 | 08 | `python-ai-consultation` | 垂直业务关 | 咨询分诊、问答边界、安全提醒 | `python -m python_ai_consultation.offline_demo` |
-| 09 | `python-spring-ai-demo` | 框架关 | Spring AI 概念的 Python 对照表达 | `python -m python_spring_ai_demo.offline_demo` |
+| 09 | `python-spring-ai-demo` | 框架关 | 常见 AI 框架能力的 Python 表达 | `python -m python_spring_ai_demo.offline_demo` |
 | 10 | `python-ai-mcp-server-demo` | 协议关 | MCP 工具协议、资源暴露、客户端调用思路 | `python -m python_ai_mcp_server_demo.offline_demo` |
 | 11 | `python-a2a-demo` | 协作关 | Agent registry、远程 Agent 调用、A2A 基础 | `python -m python_a2a_demo.offline_demo` |
 | 12 | `python-ai-alibaba-demo` | 生态关 | Alibaba/Spring AI Alibaba 能力的 Python 化演示 | `python -m python_ai_alibaba_demo.offline_demo` |
@@ -71,7 +71,7 @@ python -m <package>.offline_demo
 
 1. 第 1 关讲最小 Agent 内核：模型、提示词、工具、循环。
 2. 第 2-8 关讲 Agent 能力扩展：工具、工程、研究、数据、自动化、业务、安全边界。
-3. 第 9-15 关讲框架与协议：Spring AI 对照、MCP、A2A、Alibaba、Graph、多模型。
+3. 第 9-15 关讲框架与协议：框架能力、MCP、A2A、Alibaba、Graph、多模型。
 4. 第 16 关讲完整项目：把前面的能力组织成一个可解释、可扩展的系统。
 5. 第 17-19 关作为生态支线：让学生看到同一套 Agent 思想在 AgentScope 生态中的表达。
 

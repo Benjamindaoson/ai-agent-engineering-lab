@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 
 from .feishu_message_receiver import FeishuMessageReceiver
-from .java_claw_application import create_application
+from .claw_application import create_application
 from .web_socket_handler import WebSocketHandler
 
 

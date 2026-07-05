@@ -37,7 +37,7 @@ class MultiModelTests(unittest.TestCase):
         self.assertIn("video:demo.mp4", video_chunks[0])
         self.assertIn("qwen3-asr-flash", audio_text)
 
-    def test_audio_summary_prompt_matches_java_controller_flow(self):
+    def test_audio_summary_prompt_matches_controller_flow(self):
         service = DashscopeService(api_key="test-key")
 
         prompt = service.build_audio_summary_prompt("这里是转录文本")
@@ -45,7 +45,7 @@ class MultiModelTests(unittest.TestCase):
         self.assertIn("专业的视频内容分析师", prompt)
         self.assertIn("这里是转录文本", prompt)
 
-    def test_controller_exposes_four_java_endpoints(self):
+    def test_controller_exposes_four_endpoints(self):
         controller = create_controller()
 
         self.assertIn("qwen-image", controller.image_generation())

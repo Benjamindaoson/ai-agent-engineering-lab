@@ -1,1 +1,1 @@
-"""Interceptor counterparts for the Java demo."""
+"""Interceptor components for the framework demo."""

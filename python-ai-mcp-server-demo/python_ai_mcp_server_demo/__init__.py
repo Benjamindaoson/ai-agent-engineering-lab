@@ -1,1 +1,1 @@
-"""Python counterpart of the Java spring-ai-mcp-server-demo module."""
+"""Python teaching module for MCP-style servers."""

@@ -5,15 +5,15 @@ from datetime import date, datetime
 from pathlib import Path
 
 from .claw_agent import ClawAgent
-from .java_claw_properties import JavaClawProperties
+from .claw_properties import ClawProperties
 from .memory.memory_service import MemoryService
 from .memory.session_startup import SessionStartup
 from .skill.skill_loader import SkillLoader
 
 
 @dataclass
-class JavaClawApplication:
-    properties: JavaClawProperties
+class ClawApplication:
+    properties: ClawProperties
     memory_service: MemoryService
     session_startup: SessionStartup
     skill_loader: SkillLoader
@@ -25,9 +25,9 @@ def create_application(
     workspace_dir: str | Path | None = None,
     today=lambda: date.today(),
     now=lambda: datetime.now(),
-) -> JavaClawApplication:
+) -> ClawApplication:
     root = Path(__file__).resolve().parents[1]
-    properties = JavaClawProperties(workspace_dir=Path(workspace_dir) if workspace_dir else root / "workspace")
+    properties = ClawProperties(workspace_dir=Path(workspace_dir) if workspace_dir else root / "workspace")
     memory_service = MemoryService(properties.workspace_dir, today=today, now=now)
     session_startup = SessionStartup(properties.workspace_dir)
     skill_loader = SkillLoader()
@@ -39,7 +39,7 @@ def create_application(
         template_dir=root / "resources" / "template",
     )
     agent.init()
-    return JavaClawApplication(properties, memory_service, session_startup, skill_loader, agent)
+    return ClawApplication(properties, memory_service, session_startup, skill_loader, agent)
 
 
 def main() -> None:

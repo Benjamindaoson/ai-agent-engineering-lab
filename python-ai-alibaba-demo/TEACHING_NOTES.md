@@ -1,6 +1,6 @@
 # 教学注释：python-ai-alibaba-demo
 
-这一关讲 Alibaba / Spring AI Alibaba 相关能力在 Python 里的教学对照。
+这一关讲 Alibaba / DashScope 相关能力在 Python 里的教学演示。
 
 ## 这一关学什么
 

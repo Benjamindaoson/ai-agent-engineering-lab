@@ -6,7 +6,7 @@ from .graph_application import create_application
 def main() -> None:
     app = create_application()
     assert "content" in app.controller.simple("AI Agent")
-    assert app.controller.conditional("写Java代码")["intentionResult"] == "2"
+    assert app.controller.conditional("写Python代码")["intentionResult"] == "2"
     assert "周瑜" in app.controller.thread("check", "你好")
     assert len(app.memory_saver.list("check")) == 1
     assert "中断了，请提供用户的年龄" in app.controller.interrupt_before_state_graph("check-before")

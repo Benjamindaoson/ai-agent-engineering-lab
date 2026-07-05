@@ -1,1 +1,1 @@
-"""Python teaching port of JavaClaw."""
+"""Python teaching module for the Claw platform-style agent."""

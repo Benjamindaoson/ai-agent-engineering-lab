@@ -1,6 +1,6 @@
 # python-ai-mcp-server-demo
 
-Python counterpart of the Java `spring-ai-mcp-server-demo` module.
+A Python teaching project for MCP-style servers: tools, prompts, resources, and local HTTP service shape.
 
 ## Run order for class
 

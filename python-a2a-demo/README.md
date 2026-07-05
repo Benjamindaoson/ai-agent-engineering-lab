@@ -1,6 +1,6 @@
 # python-a2a-demo
 
-Python counterpart of the Java `a2a-server-demo` and `a2a-client-demo` modules.
+A Python teaching project for Agent-to-Agent collaboration: registry, discovery, remote calls, and ordered composition.
 
 ## Run order for class
 
@@ -12,7 +12,7 @@ python -m python_a2a_demo.offline_demo
 python -m python_a2a_demo
 ```
 
-The module is stdlib-only. It replaces Nacos service discovery and the Java A2A runtime with an in-memory `AgentRegistry` so server and client can be demonstrated together.
+The module is stdlib-only. It uses an in-memory `AgentRegistry` so server and client behavior can be demonstrated together without external service discovery.
 
 ## Class storyline
 

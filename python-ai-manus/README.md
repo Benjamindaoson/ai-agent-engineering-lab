@@ -1,6 +1,6 @@
 # python-ai-manus
 
-Python counterpart of the Java `ai-manus` module.
+A Python teaching project for Manus-style task execution: planning, file tools, search tools, browser tools, and sandbox boundaries.
 
 ## Run order for class
 

@@ -10,7 +10,7 @@ def main() -> None:
     print("== stream ==")
     print(app.controller.stream("AI Agent"))
     print("== conditional ==")
-    print(app.controller.conditional("写Java代码"))
+    print(app.controller.conditional("写Python代码"))
     print("== memory ==")
     print(app.controller.memory_saver_endpoint("demo", "你好"))
     print("== interrupt before ==")

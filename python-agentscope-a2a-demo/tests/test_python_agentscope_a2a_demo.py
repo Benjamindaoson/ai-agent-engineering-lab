@@ -43,7 +43,7 @@ class PythonAgentScopeA2ADemoTests(unittest.TestCase):
         progress = [event["message"]["content"] for event in events if event["type"] == "MESSAGE"]
         self.assertEqual(progress, ["进度 0", "进度 1", "进度 2", "完成"])
 
-    def test_weather_service_matches_java_demo(self):
+    def test_weather_service_returns_demo_response(self):
         service = WeatherService()
 
         chunks = []

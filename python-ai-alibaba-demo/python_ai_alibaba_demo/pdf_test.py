@@ -13,7 +13,7 @@ def parse_pdf_pages(path: str | Path, *, bottom_text_lines_to_delete: int = 3) -
     return [
         Document(
             f"PDF binary document: {pdf_path.name} ({len(data)} bytes). "
-            "Text extraction needs an optional PDF parser; Java uses PDFBox here.",
+            "Text extraction needs an optional PDF parser in live integrations.",
             {
                 "source": str(pdf_path),
                 "page": 1,

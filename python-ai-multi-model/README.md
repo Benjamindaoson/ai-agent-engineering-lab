@@ -1,6 +1,6 @@
 # python-ai-multi-model
 
-Python counterpart of the Java `ai-multi-model` module.
+A Python teaching project for multimodal agents: image, video, audio, payload building, and offline substitutes.
 
 ## Run order for class
 
@@ -29,12 +29,6 @@ $env:PROVIDER="dashscope"
 $env:DASHSCOPE_API_KEY="your-key"
 $env:LLM_NAME="qwen3-max"
 ```
-
-## Java to Python map
-
-- `MultiModelApplication.java` -> `multi_model_application.py`
-- `MultiModelController.java` -> `multi_model_controller.py`
-- `DashscopeService.java` -> `dashscope_service.py`
 
 ## Class storyline
 

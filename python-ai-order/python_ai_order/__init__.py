@@ -1,1 +1,1 @@
-"""Python counterpart of the Java ai-order module."""
+"""Python teaching module for order workflow agents."""

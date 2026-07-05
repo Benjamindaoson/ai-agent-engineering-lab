@@ -1,1 +1,1 @@
-"""Python counterpart of the Java ai-consultation module."""
+"""Python teaching module for consultation routing agents."""

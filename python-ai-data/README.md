@@ -1,6 +1,6 @@
 # python-ai-data
 
-Python counterpart of the Java `ai-data` module.
+A Python teaching project for data analysis agents: Text-to-SQL, SQLite querying, plan execution, and result explanation.
 
 ## Run order for class
 

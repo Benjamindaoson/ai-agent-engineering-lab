@@ -38,7 +38,7 @@ class FakeMcpClient:
 
 
 class PythonSpringAiDemoTests(unittest.TestCase):
-    def test_cosine_similarity_matches_java_math(self):
+    def test_cosine_similarity_matches_expected_math(self):
         self.assertEqual(14, CosineSimilarity.dot_product([1, 2, 3], [1, 2, 3]))
         self.assertAlmostEqual(1.0, CosineSimilarity.cosine_similarity([1, 2, 3], [1, 2, 3]))
         self.assertEqual(0, CosineSimilarity.cosine_similarity([0, 0], [1, 2]))

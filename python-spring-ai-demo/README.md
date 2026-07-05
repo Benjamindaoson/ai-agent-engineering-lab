@@ -1,6 +1,6 @@
 # python-spring-ai-demo
 
-Python counterpart of the Java `spring-ai-demo` module.
+A Python teaching project for common AI framework capabilities: chat, memory, RAG, tools, and MCP client patterns.
 
 ## Run order for class
 

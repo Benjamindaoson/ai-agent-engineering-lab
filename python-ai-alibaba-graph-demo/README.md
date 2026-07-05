@@ -1,6 +1,6 @@
 # python-ai-alibaba-graph-demo
 
-Python counterpart of the Java `spring-ai-alibaba-graph-demo` module.
+A Python teaching project for graph workflows: nodes, routing, checkpointing, interruption, and resume.
 
 ## Run order for class
 
@@ -21,17 +21,6 @@ $env:PROVIDER="deepseek"
 $env:DEEPSEEK_API_KEY="your-key"
 $env:LLM_NAME="deepseek-chat"
 ```
-
-## Java to Python map
-
-- `GraphApplication.java` -> `graph_application.py`
-- `GraphConfig.java` -> `graph_config.py`
-- `GraphController.java` -> `graph_controller.py`
-- `GraphObservationAutoConfiguration.java` -> `graph_observation_auto_configuration.py`
-- `GraphObservationProperties.java` -> `graph_observation_properties.py`
-- `blog/TitleNodeAction.java` -> `blog/title_node_action.py`
-- `blog/ContentNodeAction.java` -> `blog/content_node_action.py`
-- `interrupt/InterruptableNodeAction.java` -> `interrupt/interruptable_node_action.py`
 
 ## Class storyline
 

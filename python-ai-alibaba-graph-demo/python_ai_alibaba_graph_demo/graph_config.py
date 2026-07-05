@@ -33,13 +33,13 @@ class GraphConfig:
     def conditional_state_graph(self) -> CompiledGraph:
         def intention(state: dict[str, object], config: RunnableConfig) -> dict[str, object]:
             text = str(state["input"])
-            return {"intentionResult": "2" if "代码" in text or "Java" in text else "1"}
+            return {"intentionResult": "2" if "代码" in text or "Python" in text else "1"}
 
         def poem(state: dict[str, object], config: RunnableConfig) -> dict[str, object]:
             return {"result": f"七言绝句：{state['input']}"}
 
         def code(state: dict[str, object], config: RunnableConfig) -> dict[str, object]:
-            return {"result": f"Java代码：class Demo {{ /* {state['input']} */ }}"}
+            return {"result": f"Python代码：# {state['input']}"}
 
         return CompiledGraph(
             nodes={"intention": intention, "poem": poem, "code": code},

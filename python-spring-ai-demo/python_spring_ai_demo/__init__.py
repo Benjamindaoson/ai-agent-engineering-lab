@@ -1,1 +1,1 @@
-"""Python counterpart of the Java spring-ai-demo module."""
+"""Python teaching module for AI framework capability demos."""

@@ -42,12 +42,12 @@ class GraphDemoTests(unittest.TestCase):
         controller = create_application().controller
 
         poem = controller.conditional("写一首诗")
-        code = controller.conditional("写Java代码")
+        code = controller.conditional("写Python代码")
 
         self.assertEqual(poem["intentionResult"], "1")
         self.assertIn("七言绝句", poem["result"])
         self.assertEqual(code["intentionResult"], "2")
-        self.assertIn("Java代码", code["result"])
+        self.assertIn("Python代码", code["result"])
 
     def test_thread_and_memory_saver_use_store_and_checkpoints(self):
         app = create_application()

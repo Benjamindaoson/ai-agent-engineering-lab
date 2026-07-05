@@ -32,7 +32,7 @@ def create_application() -> GraphApplication:
 def main() -> None:
     app = create_application()
     print(app.controller.simple("AI Agent"))
-    print(app.controller.conditional("写Java代码"))
+    print(app.controller.conditional("写Python代码"))
 
 
 if __name__ == "__main__":

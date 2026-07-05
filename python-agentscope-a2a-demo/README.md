@@ -1,6 +1,6 @@
 # python-agentscope-a2a-demo
 
-Python counterpart of the Java `agentscope-a2a-demo` module.
+A Python teaching project for AgentScope-style A2A: agent cards, service discovery, remote streaming events, and client calls.
 
 ## Run order for class
 
@@ -13,13 +13,6 @@ python -m python_agentscope_a2a_demo
 ```
 
 All commands are offline. Nacos, AgentScope A2A starter, Spring Boot, and DashScope are represented by a stdlib in-memory registry and deterministic stream events.
-
-## Java to Python map
-
-- `A2AServerSpringBootApplication.java` -> `a2a_server_spring_boot_application.py`
-- `A2AClientApplication.java` -> `a2a_client_application.py`
-- `WeatherService.java` -> `weather_service.py`
-- `application.yml` -> agent-card skills in `create_server_application()`
 
 ## Class storyline
 

@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 @dataclass
-class JavaClawProperties:
+class ClawProperties:
     workspace_dir: Path = Path("python-claw/workspace")
     sessions_dir: Path = Path("python-claw/sessions")
     model_name: str = "qwen3-max"

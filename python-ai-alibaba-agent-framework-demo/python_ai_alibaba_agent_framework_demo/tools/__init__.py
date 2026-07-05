@@ -1,1 +1,1 @@
-"""Tool counterparts for the Java demo."""
+"""Tool components for the framework demo."""

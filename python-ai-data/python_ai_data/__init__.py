@@ -1,1 +1,1 @@
-"""Python port of the Java ai-data module."""
+"""Python teaching module for data analysis agents."""

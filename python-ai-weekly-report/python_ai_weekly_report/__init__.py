@@ -1,1 +1,1 @@
-"""Python counterpart of the Java ai-weekly-report module."""
+"""Python teaching module for weekly report automation."""

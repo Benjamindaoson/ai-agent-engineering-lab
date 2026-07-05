@@ -1,8 +1,9 @@
 # h1
 aaa
 
-```java
-public class Test {}
+```python
+class Test:
+    pass
 ```
 
 # h1

@@ -1,6 +1,6 @@
 # python-ai-weekly-report
 
-Python counterpart of the Java `ai-weekly-report` module.
+A Python teaching project for automation agents: Git activity collection, weekly report generation, and email dry-run delivery.
 
 ## Run order for class
 

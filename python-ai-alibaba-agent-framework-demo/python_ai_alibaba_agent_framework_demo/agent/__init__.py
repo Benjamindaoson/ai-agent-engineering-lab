@@ -1,1 +1,1 @@
-"""Custom agent counterparts for the Java demo."""
+"""Custom agent components for the framework demo."""

@@ -42,7 +42,7 @@ class PythonAgentScopeAguiDemoTests(unittest.TestCase):
 
         self.assertEqual([msg["content"] for msg in app.memory["same-thread"]], ["第一句", "第二句"])
 
-    def test_static_resources_match_java_demo_entrypoints(self):
+    def test_static_resources_expose_demo_entrypoints(self):
         app = AguiApplication()
 
         html, html_headers = app.static_response("/")

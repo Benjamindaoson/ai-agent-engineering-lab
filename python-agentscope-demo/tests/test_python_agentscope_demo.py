@@ -45,7 +45,7 @@ class PythonAgentScopeDemoTests(unittest.TestCase):
 
         weather = agent.call(Msg.text("长沙什么天气"))
         data = agent.call(Msg.text("查询最近一个月的订单数据"))
-        mail = agent.call(Msg.text("发邮件给zhouyu,主题为Java"))
+        mail = agent.call(Msg.text("发邮件给zhouyu,主题为Python"))
 
         self.assertIn("长沙 的天气", weather.text)
         self.assertIn("user-123", data.text)
@@ -118,7 +118,7 @@ class PythonAgentScopeDemoTests(unittest.TestCase):
         self.assertEqual(product.name, "课程演示产品")
 
         self.assertIn("日常生活", run_agent_skill_demo1())
-        self.assertIn("Java", run_agent_skill_demo2())
+        self.assertIn("Python", run_agent_skill_demo2())
         self.assertIn("解释代码", run_agent_skill_demo3())
         self.assertIn("API-KEY", run_rag_demo("什么是apikey"))
         self.assertIn("MCP", run_mcp_demo("上海什么天气"))

@@ -1,6 +1,6 @@
 # python-ai-alibaba-demo
 
-Python counterpart of the Java `spring-ai-alibaba-demo` module.
+A Python teaching project for DashScope and Alibaba AI workflows: chat, search, document parsing, and vector retrieval.
 
 ## Run order for class
 
@@ -29,14 +29,6 @@ $env:PROVIDER="dashscope"
 $env:DASHSCOPE_API_KEY="your-key"
 $env:LLM_NAME="qwen-long"
 ```
-
-## Java to Python map
-
-- `AlibabaApplication.java` -> `python_ai_alibaba_demo/alibaba_application.py`
-- `ChatController.java` -> `python_ai_alibaba_demo/chat_controller.py`
-- `BaiduTest.java` -> `python_ai_alibaba_demo/baidu_test.py`
-- `MarkdownTest.java` -> `python_ai_alibaba_demo/markdown_test.py`
-- `PdfTest.java` -> `python_ai_alibaba_demo/pdf_test.py`
 
 ## Class storyline
 

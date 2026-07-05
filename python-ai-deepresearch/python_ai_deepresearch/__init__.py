@@ -1,1 +1,1 @@
-"""Python port of the Java ai-deepresearch module."""
+"""Python teaching module for deep research agents."""

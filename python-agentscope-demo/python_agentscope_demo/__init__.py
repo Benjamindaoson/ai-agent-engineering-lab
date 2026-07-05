@@ -1,4 +1,4 @@
-"""Python teaching port of the Java agentscope-demo module."""
+"""Python teaching module for AgentScope-style demos."""
 
 __all__ = ["__version__"]
 

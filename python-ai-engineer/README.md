@@ -1,6 +1,6 @@
 # python-ai-engineer
 
-Python counterpart of the Java `ai-engineer` module.
+A Python teaching project for an AI engineering agent: requirement breakdown, file planning, code generation, and project task flow.
 
 ## Run order for class
 

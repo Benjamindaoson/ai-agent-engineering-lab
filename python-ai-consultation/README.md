@@ -1,6 +1,6 @@
 # python-ai-consultation
 
-Python counterpart of the Java `ai-consultation` module.
+A Python teaching project for consultation routing agents: department matching, RAG context, clarification, and appointment confirmation.
 
 ## Run order for class
 

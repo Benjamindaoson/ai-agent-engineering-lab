@@ -1,4 +1,4 @@
-"""Python teaching port of the Java spring-ai-alibaba-demo module."""
+"""Python teaching module for DashScope and Alibaba AI workflows."""
 
 __all__ = [
     "alibaba_application",

@@ -50,7 +50,7 @@ class AgentFrameworkDemoTests(unittest.TestCase):
         app = create_application()
 
         self.assertIn("planResult", app.sequential_agent.invoke("写一个计划"))
-        self.assertIn("javaCode", app.parallel_agent.invoke("写代码"))
+        self.assertIn("backendCode", app.parallel_agent.invoke("写代码"))
         self.assertEqual(app.llm_routing_agent.invoke("写python代码")["route"], "agent1")
         self.assertEqual(app.llm_routing_agent.invoke("写诗")["route"], "agent2")
         self.assertIn("executeAgent", app.zhouyu_agent.invoke("先计划再执行")["messages"][-1])

@@ -1,6 +1,6 @@
 # 教学注释：python-agentscope-a2a-demo
 
-这一关讲 AgentScope 生态里的 A2A 表达，和 `python-a2a-demo` 形成对照。
+这一关讲 AgentScope 生态里的 A2A 表达，和 `python-a2a-demo` 形成递进关系。
 
 ## 这一关学什么
 

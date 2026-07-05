@@ -1,0 +1,23 @@
+{
+  "name": "agentlab",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev --",
+    "build:web": "npm --workspace apps/web run build",
+    "typecheck:web": "npm --workspace apps/web run typecheck",
+    "dev:api": ".\\.venv\\Scripts\\python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000 --app-dir apps/api",
+    "serve:api": ".\\.venv\\Scripts\\python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --app-dir apps/api",
+    "dev:worker": "cd apps/worker && ..\\..\\.venv\\Scripts\\python -m worker.main",
+    "seed": "cd apps/api && ..\\..\\.venv\\Scripts\\python -m app.seed",
+    "test:api": "cd apps/api && ..\\..\\.venv\\Scripts\\python -m pytest",
+    "smoke": "cd apps/api && ..\\..\\.venv\\Scripts\\python -m app.smoke",
+    "test:e2e": "npm --workspace apps/web run test:e2e"
+  },
+  "overrides": {
+    "postcss": "8.5.10"
+  }
+}

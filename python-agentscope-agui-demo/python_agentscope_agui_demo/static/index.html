@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentScope AG-UI Demo</title>
+    <style>
+        body { font-family: Consolas, monospace; margin: 0; background: #1a1b26; color: #c0caf5; }
+        main { max-width: 900px; margin: 0 auto; padding: 24px; }
+        #messages { min-height: 360px; padding: 16px; border: 1px solid #414868; background: #24283b; }
+        .message { margin: 10px 0; padding: 10px; border-left: 3px solid #7aa2f7; white-space: pre-wrap; }
+        .user { border-color: #9ece6a; }
+        form { display: flex; gap: 8px; margin-top: 12px; }
+        input { flex: 1; padding: 12px; background: #24283b; color: #c0caf5; border: 1px solid #414868; }
+        button { padding: 12px 18px; background: #7aa2f7; color: white; border: 0; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>AgentScope AG-UI Demo</h1>
+    <p>Chat with an AI agent via the AG-UI protocol</p>
+    <div id="messages"></div>
+    <form id="form">
+        <input id="input" autocomplete="off" placeholder="Type a message...">
+        <button>Send</button>
+    </form>
+</main>
+<script src="/js/agui-client.js"></script>
+<script>
+const client = new AguiClient('/agui/run');
+const form = document.getElementById('form');
+const input = document.getElementById('input');
+const messages = document.getElementById('messages');
+const threadId = 'thread-' + Date.now();
+const history = [];
+
+function add(role, text) {
+    const div = document.createElement('div');
+    div.className = `message ${role}`;
+    div.textContent = `${role}: ${text}`;
+    messages.appendChild(div);
+}
+
+form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const text = input.value.trim();
+    if (!text) return;
+    input.value = '';
+    add('user', text);
+    history.push({ id: 'msg-' + Date.now(), role: 'user', content: text });
+    let answer = '';
+    await client.run({ threadId, runId: 'run-' + Date.now(), messages: history }, {
+        onTextContent: (delta) => { answer += delta; },
+        onRunFinished: () => add('assistant', answer),
+        onError: (error) => add('error', String(error))
+    });
+});
+</script>
+</body>
+</html>

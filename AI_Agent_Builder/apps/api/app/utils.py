@@ -20,3 +20,4 @@ def slugify(value: str) -> str:
         .replace(" ", "-")
         .replace("_", "-")
     )
+

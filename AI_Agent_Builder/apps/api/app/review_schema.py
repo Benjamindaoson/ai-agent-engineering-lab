@@ -78,3 +78,4 @@ class ReviewResult(BaseModel):
     evidence_items: list[EvidenceCandidate]
     interview_questions: list[InterviewQuestion]
     next_actions: list[NextAction]
+

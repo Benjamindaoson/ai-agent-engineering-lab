@@ -6,3 +6,4 @@ RUN useradd -m sandbox
 USER sandbox
 
 CMD ["python", "--version"]
+

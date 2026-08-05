@@ -59,3 +59,4 @@ The first implementation derives the track from available learner state and fall
 ## Technical Strategy
 
 Use existing `AgentCommandCenter`, `LearningPlan`, `SkillMap`, and `CourseWorkbench` data. Add a frontend-only adapter that turns these contracts into the new mission-control view model. This keeps the backend stable while making the product logic explicit.
+

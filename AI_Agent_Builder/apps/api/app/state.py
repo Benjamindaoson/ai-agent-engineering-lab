@@ -35,3 +35,4 @@ def ensure_transition(entity: str, current: str, next_state: str) -> None:
         raise StateTransitionError(f"Unknown {entity} state: {current}")
     if next_state not in allowed:
         raise StateTransitionError(f"Invalid {entity} transition: {current} -> {next_state}")
+

@@ -40,3 +40,4 @@ The backend initializes tables from `apps/api/app/schema.sql` on startup. For a 
 3. Confirm `/health` returns `{"status":"ok"}`.
 
 The API enforces learner isolation using the Supabase JWT `sub` claim. Public passport pages remain accessible by slug.
+

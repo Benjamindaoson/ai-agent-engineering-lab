@@ -671,3 +671,4 @@ Hiring Passport snapshots for recruiter-facing output
 ```
 
 This is not the only possible architecture. It is the best balance for AgentLab v0.1 because it keeps the product fast to build while protecting the only thing that matters: trusted evidence that a learner can build and explain an AI Agent project.
+

@@ -192,3 +192,4 @@
 - No background worker rewrite. Synchronous review is enough for demo and early users.
 - No new UI library. Existing CSS is enough if cleaned.
 - No custom Claude tool runtime expansion until the rule/mock path proves the product flow.
+

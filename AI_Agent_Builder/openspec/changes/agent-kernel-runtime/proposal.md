@@ -20,3 +20,4 @@ The product currently presents AI roles in the UI, but the backend still records
 - Production-grade container isolation.
 - Supabase migration rollout.
 - Paid user management.
+

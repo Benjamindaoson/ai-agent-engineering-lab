@@ -265,3 +265,4 @@ AI 教练判断下一步
 **Placeholder scan:** No task depends on “later” work. Each task has exact files and verification commands.
 
 **Type consistency:** All frontend tasks consume existing `AgentCommandCenter`, `CourseWorkbench`, `TutorState`, and `ReviewGateWorkbench` contracts already defined in `apps/web/lib/api.ts`.
+

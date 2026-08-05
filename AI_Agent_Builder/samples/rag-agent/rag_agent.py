@@ -13,3 +13,4 @@ def answer(query: str) -> str:
         if terms & {part.strip(".,").lower() for part in document.split()}:
             return document
     return "No grounded answer found."
+

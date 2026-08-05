@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any
@@ -132,3 +132,4 @@ def _looks_like_debug_request(text: str) -> bool:
 def _looks_like_planning_request(text: str) -> bool:
     planning_terms = ["怎么设计", "拆解", "思路", "评测", "架构", "下一步", "计划", "design", "plan", "eval"]
     return any(term in text for term in planning_terms)
+

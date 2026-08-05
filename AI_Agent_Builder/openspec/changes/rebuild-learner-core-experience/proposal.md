@@ -18,3 +18,4 @@ Rebuild the student core experience around diagnosis-driven mission control:
 ## Scope
 
 This change focuses on the learner-facing shell and information architecture. It reuses current APIs and data contracts. It does not add new model providers, new database tables, or a new UI dependency.
+

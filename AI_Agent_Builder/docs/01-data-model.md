@@ -486,3 +486,4 @@ Use migrations for all schema changes.
 Do not delete evidence records in normal application flows.
 
 Do not compute Hiring Passport directly from submissions. Passport must be generated from reviews, verified evidence, skill scores, and defense records.
+

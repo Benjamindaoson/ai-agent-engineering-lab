@@ -93,3 +93,4 @@ Steps:
 - [ ] Run `npm --workspace apps/web run build`.
 - [ ] Run `npm --workspace apps/web run test:e2e -- tests/vertical-slice.spec.ts`.
 - [ ] Check `http://127.0.0.1:3000/coach`.
+

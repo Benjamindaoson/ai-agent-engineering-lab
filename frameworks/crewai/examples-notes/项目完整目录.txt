@@ -1,0 +1,551 @@
+卷 OS 的文件夹 PATH 列表
+卷序列号为 00000032 841D:4F7C
+C:.
+|   .gitignore
+|   README.md
+|   项目完整目录.txt
+|
++---.github
+|   \---workflows
+|           stale.yml
+|
++---crews
+|   |   README.md
+|   |
+|   +---game-builder-crew
+|   |   |   .env.example
+|   |   |   .gitignore
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---game_builder_crew
+|   |           |   crew.py
+|   |           |   main.py
+|   |           |   __init__.py
+|   |           |
+|   |           \---config
+|   |                   agents.yaml
+|   |                   gamedesign.yaml
+|   |                   tasks.yaml
+|   |
+|   +---industry-agents
+|   |       industry-specialized-agents.ipynb
+|   |
+|   +---instagram_post
+|   |   |   .env.example
+|   |   |   .gitignore
+|   |   |   agents.py
+|   |   |   main.py
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   tasks.py
+|   |   |   uv.lock
+|   |   |
+|   |   \---tools
+|   |           browser_tools.py
+|   |           search_tools.py
+|   |           __init__.py
+|   |
+|   +---job-posting
+|   |   |   .env.example
+|   |   |   .gitignore
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---job_posting
+|   |           |   crew.py
+|   |           |   job_description_example.md
+|   |           |   main.py
+|   |           |   __init__.py
+|   |           |
+|   |           \---config
+|   |                   agents.yaml
+|   |                   tasks.yaml
+|   |
+|   +---landing_page_generator
+|   |   |   .env.example
+|   |   |   .gitignore
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---landing_page_generator
+|   |           |   crew.py
+|   |           |   main.py
+|   |           |   __init__.py
+|   |           |
+|   |           +---config
+|   |           |       agents.yaml
+|   |           |       tasks.yaml
+|   |           |       templates.json
+|   |           |
+|   |           +---templates
+|   |           |       templates_here.txt
+|   |           |
+|   |           \---tools
+|   |                   browser_tools.py
+|   |                   file_tools.py
+|   |                   search_tools.py
+|   |                   template_tools.py
+|   |                   __init__.py
+|   |
+|   +---markdown_validator
+|   |   |   .env.example
+|   |   |   .gitignore
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---markdown_validator
+|   |           |   crew.py
+|   |           |   main.py
+|   |           |   __init__.py
+|   |           |
+|   |           +---config
+|   |           |       agents.yaml
+|   |           |       tasks.yaml
+|   |           |
+|   |           \---tools
+|   |                   markdownTools.py
+|   |
+|   +---marketing_strategy
+|   |   |   .env.example
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   trained_agents_data.pkl
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---marketing_posts
+|   |           |   crew.py
+|   |           |   main.py
+|   |           |   __init__.py
+|   |           |
+|   |           \---config
+|   |                   agents.yaml
+|   |                   tasks.yaml
+|   |
+|   +---match_profile_to_positions
+|   |   |   .env.example
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   trained_agents_data.pkl
+|   |   |   uv.lock
+|   |   |
+|   |   +---db
+|   |   |       chroma.sqlite3
+|   |   |
+|   |   \---src
+|   |       \---match_to_proposal
+|   |           |   crew.py
+|   |           |   main.py
+|   |           |   __init__.py
+|   |           |
+|   |           +---config
+|   |           |       agents.yaml
+|   |           |       tasks.yaml
+|   |           |
+|   |           +---data
+|   |           |       cv.md
+|   |           |       jobs.csv
+|   |           |
+|   |           \---tools
+|   |                   job_db_connect.py
+|   |                   __init__.py
+|   |
+|   +---meta_quest_knowledge
+|   |   |   .gitignore
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   uv.lock
+|   |   |
+|   |   +---knowledge
+|   |   |       meta_quest_manual.pdf
+|   |   |       user_preference.txt
+|   |   |
+|   |   \---src
+|   |       \---meta_quest_knowledge
+|   |           |   crew.py
+|   |           |   main.py
+|   |           |   __init__.py
+|   |           |
+|   |           +---config
+|   |           |       agents.yaml
+|   |           |       tasks.yaml
+|   |           |
+|   |           \---tools
+|   |                   __init__.py
+|   |
+|   +---prep-for-a-meeting
+|   |   |   .env.example
+|   |   |   .gitignore
+|   |   |   agents.py
+|   |   |   main.py
+|   |   |   requirements.txt
+|   |   |   tasks.py
+|   |   |
+|   |   \---tools
+|   |           ExaSearchTool.py
+|   |           __init__.py
+|   |
+|   +---recruitment
+|   |   |   .env.example
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---recruitment
+|   |           |   crew.py
+|   |           |   main.py
+|   |           |   __init__.py
+|   |           |
+|   |           +---config
+|   |           |       agents.yaml
+|   |           |       tasks.yaml
+|   |           |
+|   |           \---tools
+|   |                   client.py
+|   |                   driver.py
+|   |                   linkedin.py
+|   |                   __init__.py
+|   |
+|   +---screenplay_writer
+|   |   |   README.md
+|   |   |   screenplay_writer.py
+|   |   |
+|   |   \---config
+|   |           agents.yaml
+|   |           tasks.yaml
+|   |
+|   +---starter_template
+|   |       .env_example
+|   |       .gitignore
+|   |       agents.py
+|   |       main.py
+|   |       README.md
+|   |       tasks.py
+|   |
+|   +---stock_analysis
+|   |   |   .env.example
+|   |   |   .gitignore
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---stock_analysis
+|   |           |   crew.py
+|   |           |   main.py
+|   |           |   __init__.py
+|   |           |
+|   |           +---config
+|   |           |       agents.yaml
+|   |           |       tasks.yaml
+|   |           |
+|   |           \---tools
+|   |                   calculator_tool.py
+|   |                   sec_tools.py
+|   |                   __init__.py
+|   |
+|   +---surprise_trip
+|   |   |   .env.example
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   trained_agents_data.pkl
+|   |   |   training_data.pkl
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---surprise_travel
+|   |           |   crew.py
+|   |           |   main.py
+|   |           |   __init__.py
+|   |           |
+|   |           +---config
+|   |           |       agents.yaml
+|   |           |       tasks.yaml
+|   |           |
+|   |           \---tools
+|   |                   custom_tool.py
+|   |                   __init__.py
+|   |
+|   \---trip_planner
+|       |   .env.example
+|       |   .gitignore
+|       |   main.py
+|       |   pyproject.toml
+|       |   README.md
+|       |   trip_agents.py
+|       |   trip_tasks.py
+|       |   uv.lock
+|       |
+|       \---tools
+|               browser_tools.py
+|               calculator_tools.py
+|               search_tools.py
+|               __init__.py
+|
++---flows
+|   |   README.md
+|   |
+|   +---content_creator_flow
+|   +---email_auto_responder_flow
+|   |   |   .gitignore
+|   |   |   Automating_Tasks_with_CrewAI.md
+|   |   |   Email_Flow.png
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---email_auto_responder_flow
+|   |           |   main.py
+|   |           |   types.py
+|   |           |   __init__.py
+|   |           |
+|   |           +---crews
+|   |           |   \---email_filter_crew
+|   |           |       |   email_filter_crew.py
+|   |           |       |
+|   |           |       \---config
+|   |           |               agents.yaml
+|   |           |               tasks.yaml
+|   |           |
+|   |           +---tools
+|   |           |       create_draft.py
+|   |           |
+|   |           \---utils
+|   |                   emails.py
+|   |
+|   +---lead-score-flow
+|   |   |   .gitignore
+|   |   |   Automating_Tasks_with_CrewAI.md
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---lead_score_flow
+|   |           |   constants.py
+|   |           |   leads.csv
+|   |           |   main.py
+|   |           |   types.py
+|   |           |   __init__.py
+|   |           |
+|   |           +---crews
+|   |           |   +---lead_response_crew
+|   |           |   |   |   lead_response_crew.py
+|   |           |   |   |
+|   |           |   |   \---config
+|   |           |   |           agents.yaml
+|   |           |   |           tasks.yaml
+|   |           |   |
+|   |           |   \---lead_score_crew
+|   |           |       |   lead_score_crew.py
+|   |           |       |
+|   |           |       \---config
+|   |           |               agents.yaml
+|   |           |               tasks.yaml
+|   |           |
+|   |           \---utils
+|   |                   candidateUtils.py
+|   |
+|   +---meeting_assistant_flow
+|   |   |   .gitignore
+|   |   |   meeting_notes.txt
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---meeting_assistant_flow
+|   |           |   main.py
+|   |           |   types.py
+|   |           |   __init__.py
+|   |           |
+|   |           +---crews
+|   |           |   \---meeting_assistant_crew
+|   |           |       |   meeting_assistant_crew.py
+|   |           |       |
+|   |           |       \---config
+|   |           |               agents.yaml
+|   |           |               tasks.yaml
+|   |           |
+|   |           \---utils
+|   |                   slack_helper.py
+|   |                   trello_helper.py
+|   |
+|   +---self_evaluation_loop_flow
+|   |   |   .gitignore
+|   |   |   crewai_flow.html
+|   |   |   pyproject.toml
+|   |   |   README.md
+|   |   |   self_evaluation_loop_flow.png
+|   |   |   uv.lock
+|   |   |
+|   |   \---src
+|   |       \---self_evaluation_loop_flow
+|   |           |   main.py
+|   |           |   __init__.py
+|   |           |
+|   |           +---crews
+|   |           |   +---shakespeare_crew
+|   |           |   |   |   shakespeare_crew.py
+|   |           |   |   |
+|   |           |   |   \---config
+|   |           |   |           agents.yaml
+|   |           |   |           tasks.yaml
+|   |           |   |
+|   |           |   \---x_post_review_crew
+|   |           |       |   x_post_review_crew.py
+|   |           |       |
+|   |           |       \---config
+|   |           |               agents.yaml
+|   |           |               tasks.yaml
+|   |           |
+|   |           \---tools
+|   |                   CharacterCounterTool.py
+|   |                   __init__.py
+|   |
+|   \---write_a_book_with_flows
+|       |   .gitignore
+|       |   Automating_Tasks_with_CrewAI.md
+|       |   pyproject.toml
+|       |   README.md
+|       |   The_Current_State_of_AI_in_July_2025.md
+|       |   uv.lock
+|       |
+|       \---src
+|           \---write_a_book_with_flows
+|               |   main.py
+|               |   types.py
+|               |   __init__.py
+|               |
+|               \---crews
+|                   +---outline_book_crew
+|                   |   |   outline_crew.py
+|                   |   |
+|                   |   \---config
+|                   |           agents.yaml
+|                   |           tasks.yaml
+|                   |
+|                   \---write_book_chapter_crew
+|                       |   write_book_chapter_crew.py
+|                       |
+|                       \---config
+|                               agents.yaml
+|                               tasks.yaml
+|
++---integrations
+|   |   README.md
+|   |
+|   +---azure_model
+|   |       .env.example
+|   |       .gitignore
+|   |       main.py
+|   |       pyproject.toml
+|   |       README.md
+|   |       uv.lock
+|   |
+|   +---CrewAI-LangGraph
+|   |   |   .env.example
+|   |   |   .gitignore
+|   |   |   CrewAI-LangGraph.png
+|   |   |   main.py
+|   |   |   README.md
+|   |   |   requirements.txt
+|   |   |   __init__.py
+|   |   |
+|   |   \---src
+|   |       |   graph.py
+|   |       |   nodes.py
+|   |       |   state.py
+|   |       |   __init__.py
+|   |       |
+|   |       \---crew
+|   |               agents.py
+|   |               crew.py
+|   |               tasks.py
+|   |               tools.py
+|   |
+|   \---nvidia_models
+|       +---intro
+|       |   |   .env.example
+|       |   |   .gitignore
+|       |   |   main.py
+|       |   |   Makefile
+|       |   |   pyproject.toml
+|       |   |   README.md
+|       |   |   uv.lock
+|       |   |
+|       |   \---scripts
+|       |           check_pydantic.sh
+|       |           lint_imports.sh
+|       |
+|       \---marketing_strategy
+|           |   .env.example
+|           |   .gitignore
+|           |   Makefile
+|           |   marketing_posts.ipynb
+|           |   pyproject.toml
+|           |   README.md
+|           |   uv.lock
+|           |
+|           +---scripts
+|           |       check_pydantic.sh
+|           |       lint_imports.sh
+|           |
+|           \---src
+|               \---marketing_posts
+|                   |   crew.py
+|                   |   llm.py
+|                   |   main.py
+|                   |   __init__.py
+|                   |
+|                   \---config
+|                           agents.yaml
+|                           tasks.yaml
+|
+\---notebooks
+    +---Coding Assistant
+    |       coding_assistant_eval.ipynb
+    |
+    +---Flows_101
+    |       crewai_flows_101.ipynb
+    |
+    +---Landing Page Flow
+    |       landing_page_flow.ipynb
+    |
+    +---QA Agent
+    |   |   crewai.ipynb
+    |   |   crewai_flow.html
+    |   |   laggraph.ipynb
+    |   |
+    |   \---db
+    |       |   chroma.sqlite3
+    |       |
+    |       \---eb595800-58e8-4a23-b57f-60dad6aaadea
+    |               data_level0.bin
+    |               header.bin
+    |               length.bin
+    |               link_lists.bin
+    |
+    \---Simple QA Crew + Flow
+        |   crewai_flow.html
+        |   simple_qa_agentic_flow.ipynb
+        |
+        \---db
+            |   chroma.sqlite3
+            |
+            \---9b1e5adc-9f74-43a5-a2b8-180c85535334
+                    data_level0.bin
+                    header.bin
+                    length.bin
+                    link_lists.bin

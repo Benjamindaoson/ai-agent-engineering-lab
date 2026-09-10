@@ -1,0 +1,6 @@
+- [x] Add runtime input loading, validation, CLI flags, manifest and output cleanup.
+- [x] Add failing tests for input validation and output isolation, then implement them.
+- [x] Add bounded LLM/Serper retries and research source requirements.
+- [x] Make evaluation cases independent and validate manifests/output directories.
+- [x] Update README and example input.
+- [x] Run OpenSpec validation, unit tests, compile, evaluation, and a real CLI smoke test.

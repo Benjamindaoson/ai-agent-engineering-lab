@@ -1,0 +1,4 @@
+langchain>=1.0
+langchain-deepseek
+python-dotenv
+requests

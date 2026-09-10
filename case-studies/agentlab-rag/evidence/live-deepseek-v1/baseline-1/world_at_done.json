@@ -1,0 +1,10 @@
+{
+  "purchase_requests": [
+    {
+      "sku": "SKU-1024",
+      "quantity": 20,
+      "supplier_id": "sup-low",
+      "status": "created"
+    }
+  ]
+}

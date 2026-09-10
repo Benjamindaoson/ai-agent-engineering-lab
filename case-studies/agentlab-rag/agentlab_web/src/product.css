@@ -1,0 +1,47 @@
+/* Local adaptation layer for the Tally-derived AgentLab design system. */
+:root {
+  --accent-ink: var(--paper-0);
+  --editor-surface: oklch(18% .025 258);
+  --error-paper: oklch(97% .018 15);
+  --error-ink: oklch(37% .14 15);
+  --error-shadow: oklch(25% .07 15 / .16);
+}
+
+h1, h2 { min-width: 0; overflow-wrap: anywhere; }
+.hero-copy h1 {
+  font-size: clamp(2.8rem, 4.4vw, 4.65rem);
+  line-height: .99;
+  letter-spacing: -.055em;
+  max-width: 12ch;
+  text-wrap: balance;
+}
+button:active { transform: translateY(1px); }
+.btn-primary:hover { color: var(--accent-ink); }
+.editor-shell { background: var(--editor-surface); }
+.error { background: var(--error-paper); color: var(--error-ink); box-shadow: 0 16px 36px var(--error-shadow); }
+
+.connector-card { margin: 1.25rem 0; padding: 1rem; border: 1px solid var(--border-subtle, #d8dbe8); border-radius: .75rem; background: color-mix(in oklab, var(--paper-0, #fff) 90%, #eef0ff); }
+.connector-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.connector-heading .section-kicker { margin: 0 0 .25rem; }
+.mode-toggle { display: inline-flex; padding: .2rem; border-radius: .45rem; background: #e9eaf2; }
+.mode-toggle button { border: 0; border-radius: .3rem; background: transparent; padding: .38rem .6rem; color: inherit; cursor: pointer; }
+.mode-toggle button.selected { background: #fff; box-shadow: 0 1px 3px #20233b22; }
+.connector-disclosure, .connector-status, .open-run-note { margin: .75rem 0 0; font-size: .82rem; line-height: 1.5; color: var(--text-muted, #62677d); }
+.connector-status.ready { color: #247048; }
+.connector-fields { display: grid; grid-template-columns: 1.3fr 1fr 1fr auto; gap: .65rem; align-items: end; margin-top: .75rem; }
+.connector-fields label { display: grid; gap: .3rem; color: var(--text-muted, #62677d); font-size: .68rem; letter-spacing: .06em; }
+.connector-fields input { width: 100%; min-width: 0; border: 1px solid #cdd0df; border-radius: .35rem; padding: .52rem .58rem; background: #fff; color: #181b2b; font: inherit; }
+.open-run-note { padding: .65rem .8rem; border-left: 3px solid #6767c8; background: #f2f2ff; }
+
+@media (max-width: 760px) {
+  .hero-copy h1 {
+    font-size: clamp(2.6rem, 11vw, 3.75rem);
+    line-height: 1.02;
+    letter-spacing: -.045em;
+    max-width: 14ch;
+  }
+  .task-rail ol { grid-template-columns: 1fr; }
+  .task-link span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .connector-heading { align-items: flex-start; flex-direction: column; }
+  .connector-fields { grid-template-columns: 1fr; }
+}

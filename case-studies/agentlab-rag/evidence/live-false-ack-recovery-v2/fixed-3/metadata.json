@@ -1,0 +1,23 @@
+{
+  "run_id": "fixed-3",
+  "submission": {
+    "browser_use_commit": "32601887cfbc9f4f1e3cad3e2b678e56aeaeaae4",
+    "agentlab_commit": "1d95215ed890b59466e4a53efcd59750166d5b2c",
+    "project_pack_version": "0.1",
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
+    "model_version": "DeepSeek-V4-Flash-0731",
+    "validation_type": "stochastic-live-llm",
+    "pricing_card_version": "deepseek-2026-08-08",
+    "recovery_sha256": "91e653e5885212a96529905278307c6549a1a3cb1b0400ca2e4940ccbf9e36de"
+  },
+  "metrics": {
+    "steps": 8,
+    "llm_calls": 7,
+    "input_tokens": 76941,
+    "cached_input_tokens": 72192,
+    "output_tokens": 3078,
+    "cost_usd": 0.00172884,
+    "duration_seconds": 44.711
+  }
+}

@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: java-claw
+
+javaclaw:
+  workspace-dir: ./workspace
+  model-name: qwen3-max
+  # api-key: sk-xxx
+  feishu-app-id: ${FEISHU_APP_ID:}
+  feishu-app-secret: ${FEISHU_APP_SECRET:}
+  websocket-port: 8887
+  sysprompt-prefix: 你是一个有帮助的 AI 助手
+  main-agent-name: 网页助手
+  feishu-agent-name: 飞书助手
+
+logging:
+  level:
+    root: INFO
+    com.zhouyu: DEBUG
+    io.agentscope.core.tool: DEBUG

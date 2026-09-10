@@ -1,0 +1,15 @@
+{
+  "task_success": true,
+  "false_success": false,
+  "agent_reported_done": true,
+  "recovery_triggered": false,
+  "confirmation_executed": false,
+  "metrics": {
+    "llm_calls": 3,
+    "input_tokens": 31667,
+    "cached_input_tokens": 30336,
+    "output_tokens": 818,
+    "cost_usd": 0.00050032,
+    "duration_seconds": 16.493
+  }
+}

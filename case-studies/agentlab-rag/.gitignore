@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+evidence/runs/
+sources/browser-use/.venv/
+sources/browser-use/uv.lock
+/sources/browser-use/
+/.agentlab/
+/.agentlab-*-runtime*/
+/agentlab_web/node_modules/
+/agentlab_web/dist/

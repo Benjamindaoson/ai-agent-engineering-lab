@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-task-manager-crew"
+version = "0.1.0"
+description = "AI 项目任务管理器 CLI 生成 Crew"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai>=0.152.0",
+    "python-dotenv==1.0.0",
+]
+
+[tool.setuptools]
+py-modules = ["main", "crew"]
+
+[tool.pyright]
+useLibraryCodeForTypes = true
+exclude = [".cache"]
+
+[tool.ruff]
+select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
+ignore = ['W291', 'W292', 'W293']
+
+[project.scripts]
+project_task_manager_crew = "main:run"
+project_task_manager_smoke = "main:run_smoke"

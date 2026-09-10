@@ -1,12 +1,29 @@
 # AI Agent Engineering Lab
 
-一个面向 AI Agent 工程实践的 Python 教学项目库：用 19 个可运行的子项目讲清楚 Agent 的工具调用、任务执行、RAG、MCP、A2A、多模态、工作流、评审和学习平台化。
+一个面向 AI Agent 工程实践的 Python 教学项目库：用 19 个可运行的子项目和若干已并入的 case study，讲清楚 Agent 的工具调用、任务执行、RAG、MCP、A2A、多模态、工作流、评审和学习平台化。
 
 这个仓库不是单个聊天机器人，也不是纯课件。它由三部分组成：
 
 1. **19 个 Python Agent 教学项目**：每个项目对应一个工程主题，包含源码、测试、`self_check` 和离线演示。
 2. **课程闯关工具**：`course.py` 按关卡顺序运行测试和演示，通过当前关后解锁下一关。
 3. **AgentLab 学习平台**：本地可启动的训练营系统，用 Web + API 跑通“学习规划 -> 项目实战 -> 沙箱运行 -> Agent 评审 -> 能力证据 -> Skill Passport”的闭环。
+
+## 已并入的教学 / Demo 仓
+
+以下内容原本是独立 demo 或课程快照，已经合并到本仓，后续不再单独维护：
+
+| 目录 | 来源 | 定位 |
+|---|---|---|
+| [`frameworks/crewai/project-task-manager-crew`](frameworks/crewai/project-task-manager-crew/) | `project-task-manager-crew` | CrewAI 三角色顺序协作入门 |
+| [`frameworks/crewai/handwrite`](frameworks/crewai/handwrite/) | `crewai-handwrite` | CrewAI 手写练习合集 |
+| [`frameworks/crewai/examples-notes`](frameworks/crewai/examples-notes/) | `crewai-examples-private-notes` | CrewAI 示例与本地学习笔记 |
+| [`frameworks/langchain/spain-travel-agent`](frameworks/langchain/spain-travel-agent/) | `travelagent` | LangChain 旅行规划教学 demo |
+| [`case-studies/email-invitation-agent`](case-studies/email-invitation-agent/) | `email-invitation-agent` | 邮件邀请生成 Agent 小案例 |
+| [`case-studies/urban-planning-review-agent`](case-studies/urban-planning-review-agent/) | `agent-for-planning` | 城市控规审查 RAG + 多 Agent 原型 |
+| [`case-studies/agentlab-rag`](case-studies/agentlab-rag/) | `agentlab-rag` | AgentLab 浏览器救援训练产品 case study |
+| [`protocols/mini-claw-java`](protocols/mini-claw-java/) | `mini-claw` | Java Claw/Skill 小型协议演示 |
+
+合并原则记录在 [`docs/repository-consolidation-2026-09-10.md`](docs/repository-consolidation-2026-09-10.md)。这些目录是教学资产和历史参考，不代表新增公开旗舰项目。
 
 ## 适合做什么
 
@@ -127,6 +144,9 @@ AgentLab 技术结构：
 ├─ scripts/                          # 全量质量检查脚本
 ├─ tests/                            # 仓库级测试
 ├─ docs/                             # 课程路线、关卡地图、质量评估
+├─ frameworks/                       # 已并入的框架教学 demo
+├─ case-studies/                     # 已并入的领域/产品 case study
+├─ protocols/                        # 已并入的协议/运行时 demo
 ├─ production-platform/              # 生产化平台能力说明和预留模块
 ├─ AI_Agent_Builder/                 # AgentLab 学习平台
 ├─ python-react-agent/               # 01 ReAct 最小 Agent

@@ -1,0 +1,12 @@
+validate_markdown_task:
+  description: >
+    Call the markdown_validation_tool exactly once with the Markdown path
+    {filename}. Use its returned result as the factual basis of the report.
+    Summarize the file check, list every returned issue with its line number,
+    type, and explanation, give a concrete modification recommendation for
+    each issue, and state whether the document is recommended to pass. Do not
+    invent issues, do not edit the Markdown file, and do not claim that a fix
+    was applied.
+  expected_output: >
+    A Markdown quality report containing a check summary, the Tool's complete
+    issue list, modification recommendations, and a pass recommendation.

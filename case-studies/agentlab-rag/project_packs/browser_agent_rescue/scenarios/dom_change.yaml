@@ -1,0 +1,2 @@
+id: DOM-V2
+description: Submitting a purchase now opens a second confirmation step; no database record exists until confirmation.

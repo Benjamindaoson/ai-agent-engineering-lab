@@ -1,0 +1,18 @@
+{
+  "run_id": "baseline-1",
+  "submission": {
+    "browser_use_commit": "32601887cfbc9f4f1e3cad3e2b678e56aeaeaae4",
+    "project_pack_version": "0.1",
+    "model": "agentlab-scripted-proof",
+    "pricing_card_version": "2026-08-proof-1",
+    "recovery_sha256": "a2e8e878b5fa706a437d4dda7f5501175be64210ad434cb39576dbd4998a4065"
+  },
+  "metrics": {
+    "steps": 3,
+    "llm_calls": 3,
+    "duration_seconds": 7.651,
+    "cost_usd": 0.0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

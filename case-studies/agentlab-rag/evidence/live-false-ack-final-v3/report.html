@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>AgentLab Live Recovery 正式验证</title>
+<h1>AgentLab Live Recovery 正式验证</h1>
+<p>我们模拟了一个生产系统中很常见的问题：Agent 提交采购申请后，网页告诉它已经成功，但后台第一次实际上没有保存这张采购申请。</p>
+<p>原来的系统相信页面和 Agent 自己的完成判断，所以会把一个没有真正办成的任务当成成功。修复后的系统会进一步检查真实数据库；如果采购申请没有真正存在，就让同一个 Agent 在原来的浏览器里继续工作，并在每次继续以后重新检查业务结果。</p>
+<p>模型：deepseek/deepseek-v4-flash；基础设施错误：0。</p>
+<table border="1"><tr><th>指标</th><th>Baseline</th><th>Fixed</th></tr>
+<tr><td>真正完成任务</td><td>0/5</td><td>5/5</td></tr>
+<tr><td>False Success</td><td>5/5</td><td>0/5</td></tr>
+<tr><td>Recovery 触发</td><td>0/5</td><td>5/5</td></tr>
+<tr><td>Recovery 成功</td><td>0/5</td><td>5/5</td></tr>
+<tr><td>Recovery 耗尽</td><td>0/5</td><td>0/5</td></tr>
+<tr><td>平均真实 POST 次数</td><td>1.0</td><td>2.6</td></tr><tr><td>平均恢复轮数</td><td>0.0</td><td>1.0</td></tr><tr><td>平均步骤</td><td>3.4</td><td>11.0</td></tr><tr><td>平均模型调用</td><td>2.4</td><td>10.0</td></tr><tr><td>平均耗时（秒）</td><td>15.281</td><td>60.2828</td></tr><tr><td>平均成本（USD）</td><td>0.00044049</td><td>0.002531</td></tr></table></html>

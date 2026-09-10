@@ -1,0 +1,17 @@
+project:
+  id: browser-agent-rescue
+  version: "0.1"
+runtime:
+  repository: https://github.com/browser-use/browser-use.git
+  commit: 32601887cfbc9f4f1e3cad3e2b678e56aeaeaae4
+  license: MIT
+  python: "3.12"
+entrypoint: workspace.proof:main
+tasks: tasks/tasks.json
+scenarios:
+  - scenarios/baseline.yaml
+  - scenarios/dom_change.yaml
+  - scenarios/prompt_injection.yaml
+  - scenarios/cost_budget.yaml
+pricing: pricing.yaml
+evidence_schema: evidence-v0.1

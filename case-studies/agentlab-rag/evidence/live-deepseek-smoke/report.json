@@ -1,0 +1,40 @@
+{
+  "baseline_true_successes": 1,
+  "baseline_false_successes": 0,
+  "fixed_true_successes": 1,
+  "fixed_false_successes": 0,
+  "runs": [
+    {
+      "run_id": "baseline-1",
+      "task_success": true,
+      "false_success": false,
+      "agent_reported_done": true,
+      "recovery_triggered": false,
+      "confirmation_executed": false,
+      "metrics": {
+        "llm_calls": 3,
+        "input_tokens": 31768,
+        "cached_input_tokens": 14464,
+        "output_tokens": 962,
+        "cost_usd": 0.00273242,
+        "duration_seconds": 33.683
+      }
+    },
+    {
+      "run_id": "fixed-1",
+      "task_success": true,
+      "false_success": false,
+      "agent_reported_done": true,
+      "recovery_triggered": false,
+      "confirmation_executed": false,
+      "metrics": {
+        "llm_calls": 4,
+        "input_tokens": 42668,
+        "cached_input_tokens": 40576,
+        "output_tokens": 1287,
+        "cost_usd": 0.00076685,
+        "duration_seconds": 22.279
+      }
+    }
+  ]
+}

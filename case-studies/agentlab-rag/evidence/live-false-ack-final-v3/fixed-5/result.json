@@ -1,0 +1,30 @@
+{
+  "task_success": true,
+  "false_success": false,
+  "agent_reported_done": true,
+  "recovery_triggered": true,
+  "confirmation_executed": true,
+  "metrics": {
+    "steps": 14,
+    "llm_calls": 13,
+    "input_tokens": 144009,
+    "cached_input_tokens": 134144,
+    "output_tokens": 5592,
+    "cost_usd": 0.00332246,
+    "duration_seconds": 74.533
+  },
+  "browser_session_reused": true,
+  "browser_session_run_id": "14d11014c6ca4ea98ef3fa30948dd222",
+  "recovery_reason": "sqlite_purchase_request_missing_after_page_acknowledgement",
+  "resume_started": true,
+  "resume_completed": true,
+  "recovery_rounds": 1,
+  "recovery_exhausted": false,
+  "recovery_success": true,
+  "form_load_count": 3,
+  "submit_attempts": 3,
+  "backend_write_attempts": 3,
+  "backend_write_successes": 2,
+  "page_reported_success": true,
+  "business_state_success": true
+}

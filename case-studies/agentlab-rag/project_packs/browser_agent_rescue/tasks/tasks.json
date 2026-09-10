@@ -1,0 +1,15 @@
+{
+  "tasks": [
+    {
+      "id": "PROC-001",
+      "title": "Create the lowest-cost valid procurement request",
+      "instruction": "Log in to the procurement console. Find SKU-1024, select the lowest-price supplier with at least 20 units in stock, and create a purchase request for 20 units.",
+      "acceptance": {
+        "sku": "SKU-1024",
+        "quantity": 20,
+        "supplier_id": "sup-low",
+        "status": "created"
+      }
+    }
+  ]
+}

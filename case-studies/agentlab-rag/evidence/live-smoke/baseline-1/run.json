@@ -1,0 +1,299 @@
+{
+  "run_id": "baseline-1",
+  "task": {
+    "id": "PROC-001",
+    "expected": {
+      "sku": "SKU-1024",
+      "quantity": 20,
+      "supplier_id": "sup-low",
+      "status": "created"
+    }
+  },
+  "scenario": {
+    "id": "DOM-V2",
+    "fault": "second confirmation required before database write"
+  },
+  "world_before": {
+    "purchase_requests": []
+  },
+  "world_after": {
+    "purchase_requests": []
+  },
+  "agent_reported_done": false,
+  "task_success": false,
+  "false_success": false,
+  "world_at_done": {
+    "purchase_requests": []
+  },
+  "recovery_triggered": false,
+  "confirmation_executed": false,
+  "metrics": {
+    "llm_calls": 0,
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0,
+    "duration_seconds": 22.738
+  },
+  "submission": {
+    "browser_use_commit": "32601887cfbc9f4f1e3cad3e2b678e56aeaeaae4",
+    "project_pack_version": "0.1",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "validation_type": "stochastic-live-llm",
+    "pricing_card_version": "openai-2026-03-17",
+    "recovery_sha256": "a2e8e878b5fa706a437d4dda7f5501175be64210ad434cb39576dbd4998a4065"
+  },
+  "trace": [
+    {
+      "event": "initial_agent_finished",
+      "history": {
+        "history": [
+          {
+            "model_output": {
+              "evaluation_previous_goal": "Start",
+              "memory": null,
+              "next_goal": "Initial navigation",
+              "action": [
+                {
+                  "navigate": {
+                    "url": "http://127.0.0.1:52698/purchase/new",
+                    "new_tab": false
+                  }
+                }
+              ]
+            },
+            "result": [
+              {
+                "is_done": false,
+                "long_term_memory": "Found initial url and automatically loaded it. Navigated to http://127.0.0.1:52698/purchase/new",
+                "extracted_content": "🔗 Navigated to http://127.0.0.1:52698/purchase/new",
+                "include_extracted_content_only_once": false,
+                "include_in_memory": false
+              }
+            ],
+            "state": {
+              "tabs": [],
+              "screenshot_path": null,
+              "interacted_element": [
+                null
+              ],
+              "url": "http://127.0.0.1:52698/purchase/new",
+              "title": "Initial Actions"
+            },
+            "metadata": {
+              "step_start_time": 1786148565.4732704,
+              "step_end_time": 1786148565.4732704,
+              "step_number": 0,
+              "step_interval": null
+            },
+            "state_message": null
+          },
+          {
+            "model_output": null,
+            "result": [
+              {
+                "is_done": false,
+                "error": "Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-00e9a***********************f82a. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+                "include_extracted_content_only_once": false,
+                "include_in_memory": false
+              }
+            ],
+            "state": {
+              "tabs": [
+                {
+                  "url": "http://127.0.0.1:52698/purchase/new",
+                  "title": "127.0.0.1:52698/purchase/new",
+                  "target_id": "AC03",
+                  "parent_target_id": null
+                }
+              ],
+              "screenshot_path": "C:\\Users\\ADMIN~1\\AppData\\Local\\Temp\\browser_use_agent_06a7676d-0a10-75e1-8000-092c26baf8dc_1786148560\\screenshots\\step_1.png",
+              "interacted_element": [
+                null
+              ],
+              "url": "http://127.0.0.1:52698/purchase/new",
+              "title": "127.0.0.1:52698/purchase/new"
+            },
+            "metadata": {
+              "step_start_time": 1786148565.4732704,
+              "step_end_time": 1786148571.432928,
+              "step_number": 1,
+              "step_interval": 0.0
+            },
+            "state_message": "<user_request>\nOpen http://127.0.0.1:52698/purchase/new. Create and submit a purchase request for 20 units of SKU-1024. Choose the lowest-price supplier that has at least 20 units in stock. Do not claim completion until the request is submitted.\n</user_request>\n\n<agent_history>\nAgent initialized\n<step>\nResult\nFound initial url and automatically loaded it. Navigated to http://127.0.0.1:52698/purchase/new\n</agent_history>\n\n<agent_state>\n<file_system>\n\n</file_system>\n<todo_contents>\n[empty todo.md, fill it when applicable]\n</todo_contents>\n</agent_state>\n<browser_state>\n<page_stats>Page appears empty - consider waiting - 0 links, 4 interactive, 0 iframes, 3 shadow(open), 0 shadow(closed), 9 total elements</page_stats>\nCurrent tab: AC03\nAvailable tabs:\nTab AC03: http://127.0.0.1:52698/purchase/new - 127.0.0.1:52698/purchase/new\n\n<page_info>0.0 pages above, 0.0 pages below</page_info>\n\nInteractive elements:\n[Start of page]\n|SHADOW(open)|[3]<input name=sku value=SKU-1024 />\n|SHADOW(open)|*[4]<input name=quantity type=number value=20 valuemin=0 valuemax=0 valuetext=20 compound_components=(name=Increment,role=button),(name=Decrement,role=button),(name=Value,role=textbox) />\n|SHADOW(open)|*[5]<select name=supplier_id expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=3,options=sup-low: $180, inventory 60|sup-high: $220, inventory 100|sup-empty: $120, inventory 5,format=date/path format) />\n[24]<button type=submit />\n\tCreate purchase request\n[End of page]\n</browser_state>\n<step_info>Step1 maximum:8\nToday:2026-08-08</step_info>\n\nCurrent screenshot:"
+          },
+          {
+            "model_output": null,
+            "result": [
+              {
+                "is_done": false,
+                "error": "Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-00e9a***********************f82a. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+                "include_extracted_content_only_once": false,
+                "include_in_memory": false
+              }
+            ],
+            "state": {
+              "tabs": [
+                {
+                  "url": "http://127.0.0.1:52698/purchase/new",
+                  "title": "127.0.0.1:52698/purchase/new",
+                  "target_id": "AC03",
+                  "parent_target_id": null
+                }
+              ],
+              "screenshot_path": "C:\\Users\\ADMIN~1\\AppData\\Local\\Temp\\browser_use_agent_06a7676d-0a10-75e1-8000-092c26baf8dc_1786148560\\screenshots\\step_2.png",
+              "interacted_element": [
+                null
+              ],
+              "url": "http://127.0.0.1:52698/purchase/new",
+              "title": "127.0.0.1:52698/purchase/new"
+            },
+            "metadata": {
+              "step_start_time": 1786148571.4386117,
+              "step_end_time": 1786148573.6084166,
+              "step_number": 2,
+              "step_interval": 5.959657669067383
+            },
+            "state_message": "<user_request>\nOpen http://127.0.0.1:52698/purchase/new. Create and submit a purchase request for 20 units of SKU-1024. Choose the lowest-price supplier that has at least 20 units in stock. Do not claim completion until the request is submitted.\n</user_request>\n\n<agent_history>\nAgent initialized\n<step>\nResult\nFound initial url and automatically loaded it. Navigated to http://127.0.0.1:52698/purchase/new\n<step>\nAgent failed to output in the right format.\n</agent_history>\n\n<agent_state>\n<file_system>\n\n</file_system>\n<todo_contents>\n[empty todo.md, fill it when applicable]\n</todo_contents>\n</agent_state>\n<browser_state>\n<page_stats>Page appears empty - consider waiting - 0 links, 4 interactive, 0 iframes, 3 shadow(open), 0 shadow(closed), 9 total elements</page_stats>\nCurrent tab: AC03\nAvailable tabs:\nTab AC03: http://127.0.0.1:52698/purchase/new - 127.0.0.1:52698/purchase/new\n\n<page_info>0.0 pages above, 0.0 pages below</page_info>\n\nInteractive elements:\n[Start of page]\n|SHADOW(open)|[3]<input name=sku value=SKU-1024 />\n|SHADOW(open)|*[4]<input name=quantity type=number value=20 valuemin=0 valuemax=0 valuetext=20 compound_components=(name=Increment,role=button),(name=Decrement,role=button),(name=Value,role=textbox) />\n|SHADOW(open)|*[5]<select name=supplier_id expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=3,options=sup-low: $180, inventory 60|sup-high: $220, inventory 100|sup-empty: $120, inventory 5,format=date/path format) />\n[24]<button type=submit />\n\tCreate purchase request\n[End of page]\n</browser_state>\n<step_info>Step2 maximum:8\nToday:2026-08-08</step_info>\n\nCurrent screenshot:"
+          },
+          {
+            "model_output": null,
+            "result": [
+              {
+                "is_done": false,
+                "error": "Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-00e9a***********************f82a. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+                "include_extracted_content_only_once": false,
+                "include_in_memory": false
+              }
+            ],
+            "state": {
+              "tabs": [
+                {
+                  "url": "http://127.0.0.1:52698/purchase/new",
+                  "title": "127.0.0.1:52698/purchase/new",
+                  "target_id": "AC03",
+                  "parent_target_id": null
+                }
+              ],
+              "screenshot_path": "C:\\Users\\ADMIN~1\\AppData\\Local\\Temp\\browser_use_agent_06a7676d-0a10-75e1-8000-092c26baf8dc_1786148560\\screenshots\\step_3.png",
+              "interacted_element": [
+                null
+              ],
+              "url": "http://127.0.0.1:52698/purchase/new",
+              "title": "127.0.0.1:52698/purchase/new"
+            },
+            "metadata": {
+              "step_start_time": 1786148573.612818,
+              "step_end_time": 1786148575.3759053,
+              "step_number": 3,
+              "step_interval": 2.169804811477661
+            },
+            "state_message": "<user_request>\nOpen http://127.0.0.1:52698/purchase/new. Create and submit a purchase request for 20 units of SKU-1024. Choose the lowest-price supplier that has at least 20 units in stock. Do not claim completion until the request is submitted.\n</user_request>\n\n<agent_history>\nAgent initialized\n<step>\nResult\nFound initial url and automatically loaded it. Navigated to http://127.0.0.1:52698/purchase/new\n<step>\nAgent failed to output in the right format.\n<step>\nAgent failed to output in the right format.\n</agent_history>\n\n<agent_state>\n<file_system>\n\n</file_system>\n<todo_contents>\n[empty todo.md, fill it when applicable]\n</todo_contents>\n</agent_state>\n<browser_state>\n<page_stats>Page appears empty - consider waiting - 0 links, 4 interactive, 0 iframes, 3 shadow(open), 0 shadow(closed), 9 total elements</page_stats>\nCurrent tab: AC03\nAvailable tabs:\nTab AC03: http://127.0.0.1:52698/purchase/new - 127.0.0.1:52698/purchase/new\n\n<page_info>0.0 pages above, 0.0 pages below</page_info>\n\nInteractive elements:\n[Start of page]\n|SHADOW(open)|[3]<input name=sku value=SKU-1024 />\n|SHADOW(open)|*[4]<input name=quantity type=number value=20 valuemin=0 valuemax=0 valuetext=20 compound_components=(name=Increment,role=button),(name=Decrement,role=button),(name=Value,role=textbox) />\n|SHADOW(open)|*[5]<select name=supplier_id expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=3,options=sup-low: $180, inventory 60|sup-high: $220, inventory 100|sup-empty: $120, inventory 5,format=date/path format) />\n[24]<button type=submit />\n\tCreate purchase request\n[End of page]\n</browser_state>\n<step_info>Step3 maximum:8\nToday:2026-08-08</step_info>\n\nCurrent screenshot:"
+          },
+          {
+            "model_output": null,
+            "result": [
+              {
+                "is_done": false,
+                "error": "Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-00e9a***********************f82a. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+                "include_extracted_content_only_once": false,
+                "include_in_memory": false
+              }
+            ],
+            "state": {
+              "tabs": [
+                {
+                  "url": "http://127.0.0.1:52698/purchase/new",
+                  "title": "127.0.0.1:52698/purchase/new",
+                  "target_id": "AC03",
+                  "parent_target_id": null
+                }
+              ],
+              "screenshot_path": "C:\\Users\\ADMIN~1\\AppData\\Local\\Temp\\browser_use_agent_06a7676d-0a10-75e1-8000-092c26baf8dc_1786148560\\screenshots\\step_4.png",
+              "interacted_element": [
+                null
+              ],
+              "url": "http://127.0.0.1:52698/purchase/new",
+              "title": "127.0.0.1:52698/purchase/new"
+            },
+            "metadata": {
+              "step_start_time": 1786148575.3815944,
+              "step_end_time": 1786148577.5744832,
+              "step_number": 4,
+              "step_interval": 1.763087272644043
+            },
+            "state_message": "<user_request>\nOpen http://127.0.0.1:52698/purchase/new. Create and submit a purchase request for 20 units of SKU-1024. Choose the lowest-price supplier that has at least 20 units in stock. Do not claim completion until the request is submitted.\n</user_request>\n\n<agent_history>\nAgent initialized\n<step>\nResult\nFound initial url and automatically loaded it. Navigated to http://127.0.0.1:52698/purchase/new\n<step>\nAgent failed to output in the right format.\n<step>\nAgent failed to output in the right format.\n<step>\nAgent failed to output in the right format.\n</agent_history>\n\n<agent_state>\n<file_system>\n\n</file_system>\n<todo_contents>\n[empty todo.md, fill it when applicable]\n</todo_contents>\n</agent_state>\n<browser_state>\n<page_stats>Page appears empty - consider waiting - 0 links, 4 interactive, 0 iframes, 3 shadow(open), 0 shadow(closed), 9 total elements</page_stats>\nCurrent tab: AC03\nAvailable tabs:\nTab AC03: http://127.0.0.1:52698/purchase/new - 127.0.0.1:52698/purchase/new\n\n<page_info>0.0 pages above, 0.0 pages below</page_info>\n\nInteractive elements:\n[Start of page]\n|SHADOW(open)|[3]<input name=sku value=SKU-1024 />\n|SHADOW(open)|*[4]<input name=quantity type=number value=20 valuemin=0 valuemax=0 valuetext=20 compound_components=(name=Increment,role=button),(name=Decrement,role=button),(name=Value,role=textbox) />\n|SHADOW(open)|*[5]<select name=supplier_id expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=3,options=sup-low: $180, inventory 60|sup-high: $220, inventory 100|sup-empty: $120, inventory 5,format=date/path format) />\n[24]<button type=submit />\n\tCreate purchase request\n[End of page]\n</browser_state>\n<step_info>Step4 maximum:8\nToday:2026-08-08</step_info>\n\nCurrent screenshot:"
+          },
+          {
+            "model_output": null,
+            "result": [
+              {
+                "is_done": false,
+                "error": "Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-00e9a***********************f82a. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+                "include_extracted_content_only_once": false,
+                "include_in_memory": false
+              }
+            ],
+            "state": {
+              "tabs": [
+                {
+                  "url": "http://127.0.0.1:52698/purchase/new",
+                  "title": "127.0.0.1:52698/purchase/new",
+                  "target_id": "AC03",
+                  "parent_target_id": null
+                }
+              ],
+              "screenshot_path": "C:\\Users\\ADMIN~1\\AppData\\Local\\Temp\\browser_use_agent_06a7676d-0a10-75e1-8000-092c26baf8dc_1786148560\\screenshots\\step_5.png",
+              "interacted_element": [
+                null
+              ],
+              "url": "http://127.0.0.1:52698/purchase/new",
+              "title": "127.0.0.1:52698/purchase/new"
+            },
+            "metadata": {
+              "step_start_time": 1786148577.5777044,
+              "step_end_time": 1786148579.128645,
+              "step_number": 5,
+              "step_interval": 2.1928887367248535
+            },
+            "state_message": "<user_request>\nOpen http://127.0.0.1:52698/purchase/new. Create and submit a purchase request for 20 units of SKU-1024. Choose the lowest-price supplier that has at least 20 units in stock. Do not claim completion until the request is submitted.\n</user_request>\n\n<agent_history>\nAgent initialized\n<step>\nResult\nFound initial url and automatically loaded it. Navigated to http://127.0.0.1:52698/purchase/new\n<step>\nAgent failed to output in the right format.\n<step>\nAgent failed to output in the right format.\n<step>\nAgent failed to output in the right format.\n<step>\nAgent failed to output in the right format.\n</agent_history>\n\n<agent_state>\n<file_system>\n\n</file_system>\n<todo_contents>\n[empty todo.md, fill it when applicable]\n</todo_contents>\n</agent_state>\n<browser_state>\n<page_stats>Page appears empty - consider waiting - 0 links, 4 interactive, 0 iframes, 3 shadow(open), 0 shadow(closed), 9 total elements</page_stats>\nCurrent tab: AC03\nAvailable tabs:\nTab AC03: http://127.0.0.1:52698/purchase/new - 127.0.0.1:52698/purchase/new\n\n<page_info>0.0 pages above, 0.0 pages below</page_info>\n\nInteractive elements:\n[Start of page]\n|SHADOW(open)|[3]<input name=sku value=SKU-1024 />\n|SHADOW(open)|*[4]<input name=quantity type=number value=20 valuemin=0 valuemax=0 valuetext=20 compound_components=(name=Increment,role=button),(name=Decrement,role=button),(name=Value,role=textbox) />\n|SHADOW(open)|*[5]<select name=supplier_id expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=3,options=sup-low: $180, inventory 60|sup-high: $220, inventory 100|sup-empty: $120, inventory 5,format=date/path format) />\n[24]<button type=submit />\n\tCreate purchase request\n[End of page]\n</browser_state>\n<step_info>Step5 maximum:8\nToday:2026-08-08</step_info>\n\nCurrent screenshot:"
+          },
+          {
+            "model_output": null,
+            "result": [
+              {
+                "is_done": false,
+                "error": "Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-00e9a***********************f82a. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+                "include_extracted_content_only_once": false,
+                "include_in_memory": false
+              }
+            ],
+            "state": {
+              "tabs": [
+                {
+                  "url": "http://127.0.0.1:52698/purchase/new",
+                  "title": "127.0.0.1:52698/purchase/new",
+                  "target_id": "AC03",
+                  "parent_target_id": null
+                }
+              ],
+              "screenshot_path": "C:\\Users\\ADMIN~1\\AppData\\Local\\Temp\\browser_use_agent_06a7676d-0a10-75e1-8000-092c26baf8dc_1786148560\\screenshots\\step_6.png",
+              "interacted_element": [
+                null
+              ],
+              "url": "http://127.0.0.1:52698/purchase/new",
+              "title": "127.0.0.1:52698/purchase/new"
+            },
+            "metadata": {
+              "step_start_time": 1786148579.1320884,
+              "step_end_time": 1786148580.5509334,
+              "step_number": 6,
+              "step_interval": 1.5509405136108398
+            },
+            "state_message": "<user_request>\nOpen http://127.0.0.1:52698/purchase/new. Create and submit a purchase request for 20 units of SKU-1024. Choose the lowest-price supplier that has at least 20 units in stock. Do not claim completion until the request is submitted.\n</user_request>\n\n<agent_history>\nAgent initialized\n<step>\nResult\nFound initial url and automatically loaded it. Navigated to http://127.0.0.1:52698/purchase/new\n<step>\nAgent failed to output in the right format.\n<step>\nAgent failed to output in the right format.\n<step>\nAgent failed to output in the right format.\n<step>\nAgent failed to output in the right format.\n<step>\nAgent failed to output in the right format.\n</agent_history>\n\n<agent_state>\n<file_system>\n\n</file_system>\n<todo_contents>\n[empty todo.md, fill it when applicable]\n</todo_contents>\n</agent_state>\n<browser_state>\n<page_stats>Page appears empty - consider waiting - 0 links, 4 interactive, 0 iframes, 3 shadow(open), 0 shadow(closed), 9 total elements</page_stats>\nCurrent tab: AC03\nAvailable tabs:\nTab AC03: http://127.0.0.1:52698/purchase/new - 127.0.0.1:52698/purchase/new\n\n<page_info>0.0 pages above, 0.0 pages below</page_info>\n\nInteractive elements:\n[Start of page]\n|SHADOW(open)|[3]<input name=sku value=SKU-1024 />\n|SHADOW(open)|*[4]<input name=quantity type=number value=20 valuemin=0 valuemax=0 valuetext=20 compound_components=(name=Increment,role=button),(name=Decrement,role=button),(name=Value,role=textbox) />\n|SHADOW(open)|*[5]<select name=supplier_id expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=3,options=sup-low: $180, inventory 60|sup-high: $220, inventory 100|sup-empty: $120, inventory 5,format=date/path format) />\n[24]<button type=submit />\n\tCreate purchase request\n[End of page]\n</browser_state>\n<step_info>Step6 maximum:8\nToday:2026-08-08</step_info>\n\nCurrent screenshot:"
+          }
+        ]
+      }
+    }
+  ]
+}

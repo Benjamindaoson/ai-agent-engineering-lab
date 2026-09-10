@@ -1,0 +1,20 @@
+[
+  {
+    "name": "AI 培训课程",
+    "brand_name": "道生AI",
+    "product_name": "AI Agent 实战训练营",
+    "target_market": "中国大陆中文市场"
+  },
+  {
+    "name": "B2B 企业 Agent 软件",
+    "brand_name": "数智星云",
+    "product_name": "企业 Agent 工作台",
+    "target_market": "中国大陆企业服务市场"
+  },
+  {
+    "name": "知识付费个人品牌",
+    "brand_name": "小林增长实验室",
+    "product_name": "AI 内容增长陪跑课",
+    "target_market": "中文知识付费市场"
+  }
+]

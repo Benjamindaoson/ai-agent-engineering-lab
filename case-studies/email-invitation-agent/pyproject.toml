@@ -1,0 +1,9 @@
+[project]
+name = "email-invitation-agent"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=1.15.2",
+    "openai>=2.45.0",
+    "python-dotenv>=1.2.2",
+]

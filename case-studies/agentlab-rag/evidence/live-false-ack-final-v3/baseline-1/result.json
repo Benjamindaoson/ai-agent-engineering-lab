@@ -1,0 +1,30 @@
+{
+  "task_success": false,
+  "false_success": true,
+  "agent_reported_done": true,
+  "recovery_triggered": false,
+  "confirmation_executed": false,
+  "metrics": {
+    "steps": 3,
+    "llm_calls": 2,
+    "input_tokens": 21093,
+    "cached_input_tokens": 20224,
+    "output_tokens": 642,
+    "cost_usd": 0.00035805,
+    "duration_seconds": 21.792
+  },
+  "browser_session_reused": false,
+  "browser_session_run_id": "fe5555dd64cc4cedad80cf22863b581e",
+  "recovery_reason": null,
+  "resume_started": false,
+  "resume_completed": false,
+  "recovery_rounds": 0,
+  "recovery_exhausted": false,
+  "recovery_success": false,
+  "form_load_count": 1,
+  "submit_attempts": 1,
+  "backend_write_attempts": 1,
+  "backend_write_successes": 0,
+  "page_reported_success": true,
+  "business_state_success": false
+}

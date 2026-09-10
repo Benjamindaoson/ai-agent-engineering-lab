@@ -1,0 +1,22 @@
+[project]
+name = "marketing-strategy"
+version = "0.1.0"
+description = "中文 DeepSeek 营销策略多 Agent 项目"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "crewai[tools]>=1.15.2",
+    "crewai-tools>=0.58.0",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.7.0",
+]
+
+[project.scripts]
+marketing_posts = "marketing_posts.main:run"
+
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/marketing_posts"]

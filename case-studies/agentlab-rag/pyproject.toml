@@ -1,0 +1,25 @@
+[project]
+name = "agentlab"
+version = "0.1.0"
+description = "AgentLab Proof #1"
+requires-python = ">=3.12"
+dependencies = [
+    "browser-use",
+    "fastapi>=0.128,<1",
+    "uvicorn>=0.40,<1",
+]
+
+[tool.uv.sources]
+browser-use = { path = "sources/browser-use", editable = false }
+
+[dependency-groups]
+dev = [
+    "pytest>=9,<10",
+    "pytest-asyncio>=1,<2",
+    "httpx>=0.28,<1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+pythonpath = ["."]

@@ -1,0 +1,24 @@
+{
+  "task_success": false,
+  "false_success": true,
+  "agent_reported_done": true,
+  "recovery_triggered": false,
+  "confirmation_executed": false,
+  "metrics": {
+    "steps": 4,
+    "llm_calls": 3,
+    "input_tokens": 32108,
+    "cached_input_tokens": 30336,
+    "output_tokens": 1330,
+    "cost_usd": 0.00070542,
+    "duration_seconds": 19.68
+  },
+  "browser_session_reused": false,
+  "browser_session_run_id": "7d1cdc7dcc4042e19e56a3ef853179de",
+  "recovery_reason": null,
+  "resume_started": false,
+  "resume_completed": false,
+  "submit_attempts": 1,
+  "page_reported_success": true,
+  "business_state_success": false
+}

@@ -10,7 +10,7 @@ class ClawProperties:
     sessions_dir: Path = Path("python-claw/sessions")
     model_name: str = "qwen3-max"
     api_key: str = ""
-    feishu_app_id: str = "cli_a9254db320f85cd9"
+    feishu_app_id: str = ""
     feishu_app_secret: str = ""
     websocket_port: int = 8887
     sysprompt_prefix: str = "你是一个有帮助的 AI 助手"

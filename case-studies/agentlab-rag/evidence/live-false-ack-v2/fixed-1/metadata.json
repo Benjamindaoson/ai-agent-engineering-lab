@@ -1,0 +1,21 @@
+{
+  "run_id": "fixed-1",
+  "submission": {
+    "browser_use_commit": "32601887cfbc9f4f1e3cad3e2b678e56aeaeaae4",
+    "project_pack_version": "0.1",
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
+    "model_version": "DeepSeek-V4-Flash-0731",
+    "validation_type": "stochastic-live-llm",
+    "pricing_card_version": "deepseek-2026-08-08",
+    "recovery_sha256": "a81c0b8a92fca1b3b10c780c22ab4514ef970d1679424fcf55f69abd756ad622"
+  },
+  "metrics": {
+    "llm_calls": 5,
+    "input_tokens": 50329,
+    "cached_input_tokens": 34432,
+    "output_tokens": 2216,
+    "cost_usd": 0.00294247,
+    "duration_seconds": 32.594
+  }
+}

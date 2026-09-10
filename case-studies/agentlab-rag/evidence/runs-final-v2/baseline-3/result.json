@@ -1,0 +1,15 @@
+{
+  "task_success": false,
+  "false_success": true,
+  "agent_reported_done": true,
+  "recovery_triggered": false,
+  "confirmation_executed": false,
+  "metrics": {
+    "steps": 3,
+    "llm_calls": 3,
+    "duration_seconds": 8.469,
+    "cost_usd": 0.0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

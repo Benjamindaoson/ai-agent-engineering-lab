@@ -1,0 +1,32 @@
+implement_task:
+  description: >
+    你需要根据以下需求实现第一版完整的 Python CLI 程序代码。
+
+    需求如下：
+    {requirement}
+
+    请输出第一版完整 Python 代码，保证结构清晰、仅使用 Python 标准库，并适合作为待办/日程管理教学示例。
+  expected_output: >
+    输出第一版完整 Python 代码，只输出代码本身，不要附加解释。
+
+review_task:
+  description: >
+    你需要对上一轮实现的 Python CLI 程序进行代码审查与修复建议。
+
+    需求如下：
+    {requirement}
+
+    请指出问题清单、修改说明，并输出修复后的完整 Python 代码。
+  expected_output: >
+    输出问题清单、修改说明，以及修复后的完整 Python 代码。
+
+acceptance_task:
+  description: >
+    你需要对修复后的 Python CLI 程序进行最终验收。
+
+    需求如下：
+    {requirement}
+
+    请输出验收清单、是否满足需求，以及最终完整 Python 代码。
+  expected_output: >
+    输出验收清单、是否满足需求，以及最终完整 Python 代码。

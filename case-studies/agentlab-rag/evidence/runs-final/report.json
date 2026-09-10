@@ -1,0 +1,104 @@
+{
+  "baseline_true_successes": 0,
+  "baseline_false_successes": 3,
+  "fixed_true_successes": 3,
+  "fixed_false_successes": 0,
+  "runs": [
+    {
+      "run_id": "baseline-1",
+      "task_success": false,
+      "false_success": true,
+      "agent_reported_done": true,
+      "recovery_triggered": false,
+      "confirmation_executed": false,
+      "metrics": {
+        "steps": 3,
+        "llm_calls": 3,
+        "duration_seconds": 10.613,
+        "cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "run_id": "baseline-2",
+      "task_success": false,
+      "false_success": true,
+      "agent_reported_done": true,
+      "recovery_triggered": false,
+      "confirmation_executed": false,
+      "metrics": {
+        "steps": 3,
+        "llm_calls": 3,
+        "duration_seconds": 5.818,
+        "cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "run_id": "baseline-3",
+      "task_success": false,
+      "false_success": true,
+      "agent_reported_done": true,
+      "recovery_triggered": false,
+      "confirmation_executed": false,
+      "metrics": {
+        "steps": 3,
+        "llm_calls": 3,
+        "duration_seconds": 5.676,
+        "cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "run_id": "fixed-1",
+      "task_success": true,
+      "false_success": false,
+      "agent_reported_done": true,
+      "recovery_triggered": true,
+      "confirmation_executed": true,
+      "metrics": {
+        "steps": 6,
+        "llm_calls": 6,
+        "duration_seconds": 9.905,
+        "cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "run_id": "fixed-2",
+      "task_success": true,
+      "false_success": false,
+      "agent_reported_done": true,
+      "recovery_triggered": true,
+      "confirmation_executed": true,
+      "metrics": {
+        "steps": 6,
+        "llm_calls": 6,
+        "duration_seconds": 9.934,
+        "cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "run_id": "fixed-3",
+      "task_success": true,
+      "false_success": false,
+      "agent_reported_done": true,
+      "recovery_triggered": true,
+      "confirmation_executed": true,
+      "metrics": {
+        "steps": 6,
+        "llm_calls": 6,
+        "duration_seconds": 10.762,
+        "cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    }
+  ]
+}

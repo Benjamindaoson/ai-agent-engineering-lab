@@ -1,3 +1,6 @@
+> **Portfolio status / 作品集状态：TEACHING · Agent Systems**
+> Teaching repository; examples are not presented as independent flagship products.
+
 # AI Agent Engineering Lab
 
 一个面向 AI Agent 工程实践的 Python 教学项目库：用 19 个可运行的子项目和若干已并入的 case study，讲清楚 Agent 的工具调用、任务执行、RAG、MCP、A2A、多模态、工作流、评审和学习平台化。

@@ -3,6 +3,18 @@
 
 # AI Agent Engineering Lab
 
+## CV-aligned teaching and open-source summary
+
+**Portfolio role:** Teaching and technical leadership artifact for practical AI agent engineering, not a separate research flagship.
+
+- Authored 19 runnable Python agent projects covering ReAct, task execution, RAG, MCP, A2A, multimodal workflows, graph orchestration, and agent evaluation.
+- Built AgentLab, a hands-on learning platform connecting learning plans, project execution, sandbox runs, agent review, evidence capture, and skill profiles.
+- Supports project-based AI engineering instruction delivered to 50+ learners.
+
+**Teaching principle:** Demonstrate agents as executable systems composed of models, tools, state, memory, workflows, safety controls, and evaluation—not as prompt-only chat interfaces.
+
+
+
 一个面向 AI Agent 工程实践的 Python 教学项目库：用 19 个可运行的子项目和若干已并入的 case study，讲清楚 Agent 的工具调用、任务执行、RAG、MCP、A2A、多模态、工作流、评审和学习平台化。
 
 这个仓库不是单个聊天机器人，也不是纯课件。它由三部分组成：
